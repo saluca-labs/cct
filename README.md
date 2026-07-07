@@ -4,6 +4,8 @@ Reproduction harness, data, and released transcripts for the empirical probe in
 **"Curated Context, Not Weight Surgery: Reasoning-Shaped Mindsets over MCP as a Safe Stopgap for
 Task-Scoped Functional Tuning of Small Language Models"** (Saluca Labs, 2026).
 
+📄 Preprint (Zenodo): **https://doi.org/10.5281/zenodo.21247053**
+
 The 2026 self-distillation literature shows that training a small "thinking" model on
 answer-bearing (δ_ref) supervision **suppresses the deliberation tokens** ("Wait", "Let", "Maybe")
 that carry multi-step reasoning. This probe asks the inference-time version of that question: when
@@ -90,8 +92,8 @@ experiment-plan.md            design notes and hypotheses
 ## Citation
 
 Ruvalcaba, C. (2026). *Curated Context, Not Weight Surgery: Reasoning-Shaped Mindsets over MCP as a
-Safe Stopgap for Task-Scoped Functional Tuning of Small Language Models.* Saluca Labs. Preprint on
-Zenodo (DOI to be added on publication).
+Safe Stopgap for Task-Scoped Functional Tuning of Small Language Models.* Saluca Labs. Zenodo.
+https://doi.org/10.5281/zenodo.21247053
 
 ## License
 
