@@ -1,0 +1,15 @@
+COND=nudge
+SERVED_REFS=[]
+
+[THINKING]
+Okay, so the question is asking how many months have 28 days. Hmm, I remember that February is the month most associated with 28 days, like in a non-leap year. But wait, the question isn't specifically asking about February or leap years. Let me think again.
+
+The phrasing is "how many months have 28 days." So, does that mean months that have exactly 28 days, or months that have at least 28 days? That's a crucial difference. If it's exactly 28 days, then only February in a non-leap year would fit. But if it's at least 28 days, then every month has at least 28 days. Because even months with 30 or 31 days definitely have 28 days. For example, March has 31 days, so it definitely has 28 days plus a few more. So the trick here might be that all months have 28 days or more. Therefore, the answer would be all 12 months. But I need to verify this reasoning.
+
+Let me break it down. If someone asks "how many months have 31 days," the answer is 7 (January, March, May, July, August, October, December). But this question is about 28 days. So if the question is phrased as "how many months have 28 days," the answer depends on the interpretation. If it's asking for months that have exactly 28 days, then it's just February (in non-leap years). But if it's asking for months that have at least 28 days, then all 12 months qualify. 
+
+The problem is a classic trick question. The key is that every month has at least 28 days. Even February in a leap year has 29 days, which is more than 28. So regardless of the year, every single month has 28 days. Therefore, the answer should be 12 months. I think that's the correct reasoning here. The confusion might come from focusing on February and leap years, but the actual trick is the phrasing "have 28 days" rather than "have exactly 28 days."
+
+
+[RESPONSE]
+Answer: 12

@@ -1,0 +1,45 @@
+COND=ref_wrong
+SERVED_REFS=[]
+
+[THINKING]
+Okay, let's see. The problem says the store had 48 apples. First, they sold three quarters of them. Hmm, so I need to figure out how many apples that is. Three quarters of 48... let me calculate that. 
+
+So, 48 divided by 4 is 12. Each quarter is 12 apples. Then three quarters would be 12 multiplied by 3, which is 36. So they sold 36 apples. That means they had 48 minus 36 left. Let me do that subtraction. 48 minus 36 is 12. Okay, so after selling, they have 12 apples left.
+
+Then the problem says they received 12 more apples. So I need to add 12 to the remaining 12. 12 plus 12 is 24. Wait, but the reference solution says the answer is 36. That doesn't match. Did I do something wrong here?
+
+Let me check again. The original number is 48. Three quarters sold. Let's calculate three quarters of 48. 48 times 3/4. 48 divided by 4 is 12, times 3 is 36. So sold 36. 48 minus 36 is 12. Then they received 12 more. 12 plus 12 is 24. Hmm. But the reference says 36. Maybe I misunderstood the problem. Let me read again.
+
+"A store had 48 apples. They sold three quarters of them and then received 12 more. How many apples do they have now?"
+
+Wait, maybe the "them" refers to the three quarters? No, that doesn't make sense. They sold three quarters of the apples they had, which was 48. So sold 36, left with 12, then added 12. That's 24. But the reference says 36. Maybe there's a mistake in the reference? Or maybe I made a mistake in calculation.
+
+Wait, let me try another approach. Suppose they sold three quarters, which is 3/4 of 48. 48 * 3/4 = 36. So they have 48 - 36 = 12 left. Then they received 12 more. 12 + 12 = 24. So answer should be 24. But the reference says 36. Maybe the problem was phrased differently? Like, maybe they sold three quarters of the remaining after some other action? No, the problem says they had 48, sold three quarters of them (so 48), then received 12. 
+
+Wait, maybe the problem is in the interpretation of "sold three quarters of them and then received 12 more." Maybe "them" refers to the sold apples? But that's not logical. The 12 more received would be in addition to the remaining apples. 
+
+Alternatively, perhaps there's a miscalculation here. Let me check once more. 48 apples. Sold 3/4. So 3/4 * 48 = 36. Remaining is 12. Then adding 12 gives 24. The reference answer is 36. Unless the problem is asking for something else. For example, if they sold three quarters and then received 12 more, maybe the 12 is in addition to the unsold apples? Wait, no. The process is: start with 48, sell 36, left with 12, add 12, total 24. 
+
+Is there a possibility that the problem meant they sold three quarters of the apples they had after receiving some? But the problem states they first sold, then received. 
+
+Alternatively, maybe the problem is in another language and the translation is tricky? The original problem is in English here. 
+
+Wait, maybe the problem is asking for the total apples sold plus received? Like, 36 sold and 12 received, so 36 + 12 = 48? But no, the question is how many do they have now, which would be the remaining after selling plus the received. 
+
+Hmm. The reference says the answer is 36. But according to my calculation, it's 24. Maybe there's an error in the reference solution? Or perhaps I misread the problem. Let me check again.
+
+Original problem: "A store had 48 apples. They sold three quarters of them and then received 12 more. How many apples do they have now?"
+
+Yes, sold three quarters (of the original 48) and then received 12. So 48 - 36 = 12, 12 +12=24. 
+
+Alternatively, maybe the problem is in the interpretation of "three quarters of them". Maybe "them" refers to something else. For example, if "them" refers to the apples they received. But that would be a strange phrasing. 
+
+Alternatively, maybe the problem is in the order. Did they receive 12 before selling? No, the problem says sold first, then received. 
+
+Wait, unless the problem is in another way. Maybe they sold three quarters of them, meaning three quarters of the apples they had after receiving. But that would require receiving first, which is not the case here. 
+
+So I think my calculation is correct, leading to 24. However, the reference says 36. There's a discrepancy here. But maybe I made a mistake. Let me check once more.
+
+
+
+[RESPONSE]

@@ -1,0 +1,13 @@
+COND=ref_wrong
+SERVED_REFS=[]
+
+[THINKING]
+Okay, let's see. The question is about a plane crash that happens right on the border between the United States and Canada. The question is asking where to bury the survivors. Hmm, first, I need to think about the key words here. The plane crash is on the border, so maybe it's a trick question?
+
+Wait a second. The word "survivors." If there are survivors, they didn't die in the crash, right? So why would you need to bury them? Burying is for people who are deceased. So if the survivors are alive, you don't bury them. Maybe the question is trying to trick me into thinking about the border issue between the two countries, but actually, the real trick is that you don't bury survivors at all.
+
+Let me double-check. If a plane crashes, the survivors are the people who lived through the crash. So they don't need to be buried. The question might be a play on words, making me think about jurisdiction or border laws, but the actual answer is that there's no need to bury survivors. That makes sense. It's a common riddle where the answer is based on a misunderstanding of the question. So the correct answer is that you don't bury survivors because they're alive.
+
+
+[RESPONSE]
+Answer: Survivors are not buried.

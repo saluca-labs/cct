@@ -1,0 +1,19 @@
+COND=base
+SERVED_REFS=[]
+
+[THINKING]
+Okay, let's see. The problem says a farmer has 15 cows, and all but 6 run away. I need to figure out how many cows remain. Hmm.
+
+So, first, the farmer starts with 15 cows. The key part here is "all but 6 run away." That phrase can be a bit tricky. Let me break it down. "All but 6" means that out of the total number of cows, which is 15, all of them except for 6 run away. So if all but 6 run away, then the number of cows that remain is 6. Wait, is that right? Let me double-check.
+
+If all except 6 run away, then the remaining cows are the 6 that didn't run. So the total is 15, and the ones that ran away would be 15 minus 6, which is 9. But the question is asking how many remain. So yes, the ones that remain are the 6. Let me make sure there's no trick here. Sometimes these problems try to trip you up with wording. For example, if someone says "all except 6," does that mean 6 left or 6 stayed? In this case, the sentence says "all but 6 run away," so the "but 6" is the exception to the "all" that ran away. Therefore, those 6 are the ones that didn't run away, so they remain. 
+
+Another way to think about it is: "All but 6" is another way of saying "all except for 6." So if all the cows except 6 run away, then 15 total minus the 6 that stayed equals 9 that ran away. But the question is about how many remain, so it's the 6. I think that's straightforward. Maybe some people might misinterpret it as 6 running away, but the wording is clear: "all but 6 run away," meaning the 6 are left. 
+
+Let me try another angle. Suppose the farmer had fewer cows. Let's say he had 10 cows. If all but 6 run away, then 4 run away and 6 remain. Wait, no, if all but 6 run away, then 10 total minus 6 remaining equals 4 that ran away. So yes, the remaining is 6. So applying that to 15 cows: 15 - 6 = 9 ran away, 6 remain. So the answer should be 6. 
+
+I don't see any other interpretation here. The problem is testing understanding of the phrase "all but," which in this context means that the exception (the 6) are the ones that remain. So the answer is 6.
+
+
+[RESPONSE]
+Answer: 6

@@ -1,0 +1,11 @@
+COND=nudge
+SERVED_REFS=[]
+
+[THINKING]
+Okay, let's see. The problem says a farmer had 17 sheep. Then all but 9 died. Hmm, how many are left?
+
+Wait, "all but 9 died" means that out of the 17, some number died except for 9. So if all except 9 died, then the ones that are left are the 9. Because "all but 9" dying implies that 9 survived. So the total was 17, and 9 are left. But wait, maybe I should check the math. If all but 9 died, then the number that died is 17 minus 9. That would be 8. So 8 died, leaving 9. So yes, the answer should be 9. But why does the problem say "how many sheep are left"? Because the 9 that survived are the ones left. So the answer is 9. I think that's right. Let me make sure I didn't misread anything. The original number is 17. All but 9 died. So 9 are left. Yep, that seems correct.
+
+
+[RESPONSE]
+Answer: 9

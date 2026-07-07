@@ -1,0 +1,31 @@
+COND=ref_correct
+SERVED_REFS=[]
+
+[THINKING]
+Okay, let's see. The problem is about socks in a drawer. There are 10 red socks and 10 blue socks, all mixed up. The question is, how many socks do I need to take out to be certain I have a matching pair? Hmm.
+
+Alright, so the key here is that it's dark, so I can't see the colors. So I have to take out socks without knowing their color. I need to figure out the minimum number that guarantees at least two of the same color. 
+
+Let me think about the worst-case scenario. Because the question is asking for certainty. So even if I'm really unlucky, how many would I need to take to make sure there's a pair. 
+
+So there are two colors: red and blue. Let's say I take one sock. It could be red or blue. Then another sock. If the second sock is a different color from the first, then I don't have a pair. So if I take two socks, there's a chance they are different colors. So two socks might not be enough. 
+
+If I take three socks, what happens then? Let's consider the possible combinations. The worst case is that I pick one of each color first. So first sock red, second sock blue. Then the third sock has to be either red or blue. So with three socks, even if I have one red and one blue, the third one has to be either red or blue, which would make a pair. So three socks would guarantee a pair. 
+
+Wait, let me check again. There are two colors. The maximum number of socks you can have without having a pair is two (one red and one blue). Once you add a third sock, it has to be either red or blue, so you must have at least two of the same color. So yes, three socks. 
+
+So the answer should be three. Let me think if there's any other way this could be different. For example, if there were more colors, but here it's only red and blue. So yeah, three socks would ensure a pair. 
+
+Another way to think about it is using the pigeonhole principle. If there are two categories (colors) and you have n items, then to ensure at least one category has two items, you need n+1. Wait, the pigeonhole principle says that if you have n holes and k items, then at least one hole has ceiling(k/n) items. So in this case, two colors (holes), to ensure at least two socks in one hole, how many do you need? 
+
+If you have two holes (red and blue), taking three socks would mean that ceiling(3/2) = 2. So yes, three socks would guarantee that at least one color has two socks. 
+
+So that's the pigeonhole principle application. So the answer is three. 
+
+I think that's solid. Let me just check for any possible mistakes. For example, if the question was about four colors, the answer would be five. But here two colors, so three. Yep. 
+
+So the answer is 3.
+
+
+[RESPONSE]
+Answer: 3

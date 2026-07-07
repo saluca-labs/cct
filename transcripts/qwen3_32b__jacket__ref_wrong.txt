@@ -1,0 +1,27 @@
+COND=ref_wrong
+SERVED_REFS=[]
+
+[THINKING]
+Okay, let's see. The problem says that a jacket's price doubles every year. After 6 years, it costs $640. They want to know what it cost after 5 years. Hmm, okay.
+
+First, I need to understand how the price is increasing. If it doubles every year, that means each year the price is multiplied by 2. So if I start with an initial price, let's call it P, then after 1 year it would be P * 2, after 2 years it's P * 2^2, and so on. So in general, after n years, the price is P * 2^n.
+
+Wait, but the problem says after 6 years it's $640. So let's write that equation: P * 2^6 = 640. Then we can solve for P. Let me calculate 2^6. 2^6 is 64. So P * 64 = 640. Therefore, P = 640 / 64. Let me compute that. 640 divided by 64. Well, 64 times 10 is 640, so 640 divided by 64 is 10. So the initial price P is $10.
+
+But wait, the question isn't asking for the initial price. It's asking for the price after 5 years. So if the initial price is $10, then after 5 years, the price would be 10 * 2^5. Let me check 2^5. 2^5 is 32. So 10 * 32 is 320. Therefore, after 5 years, the price is $320. But wait, the answer given in the reference is 128. That contradicts my calculation. Hmm, maybe I made a mistake here.
+
+Wait, let me check again. The problem says the price doubles every year. So starting from year 0 (initial price), after 1 year it doubles, after 2 years it doubles again, etc. So after 6 years, the price is P * 2^6 = 640. So solving for P gives 10. Then after 5 years, it's P * 2^5 = 10 * 32 = 320. But the reference answer is 128. That suggests that maybe there's a misunderstanding here.
+
+Alternatively, maybe the problem is considering that after 6 years, the price has just doubled for the 6th time, so perhaps the initial price is considered at year 0, then year 1, year 2,... up to year 6. So after 6 years, it's 2^6 times the original. But if the question is asking after 5 years, then it's 2^5 times the original. So if 2^6 * P = 640, then P = 10, and 2^5 * P = 320. But the reference says 128, which is 640 divided by 5, but that doesn't fit.
+
+Wait, perhaps the problem is phrased differently. Let me read again: "After 6 years it costs $640. What did it cost after 5 years?" So if the price doubles every year, then each year's price is double the previous. So from year 5 to year 6, the price doubles. Therefore, the price after 5 years multiplied by 2 equals the price after 6 years. So if after 6 years it's 640, then after 5 years it's 640 divided by 2, which is 320. But the reference answer is 128. So there's a conflict here.
+
+Wait, maybe the problem is using a different starting point. Suppose the initial price is considered as year 1, and then after 6 years would be year 7? No, the problem says "after 6 years it costs $640." That should mean that starting from the original price, after 6 years of doubling each year, it's 640. Therefore, the answer should be 320. But the reference says 128. So perhaps there's a misunderstanding in how the years are counted.
+
+Alternatively, maybe the problem is that the initial price is considered as year 1, and after 1 year it's year 2. Wait, that could be a possible confusion. Let me think. For example, if someone says "after 6 years," does that mean 6 years from now, or 6 years including the first year? For example, if the original price is at time zero, then after 1 year, it's time 1. So after 6 years, it's time 6. But if someone says "after 5 years," that's time 5. Therefore, from time 5 to time 6, it doubles. So price at time 5 is 640 / 2 = 320. Therefore, answer 320. But the reference says 128. So why is there a discrepancy?
+
+Wait, maybe the problem is in the interpretation of "after 5 years." Maybe the problem is not starting from the same initial point. Let me try another approach. Suppose the jacket's price doubles every year. After 6 years, it's 640. What was the price after 5 years?
+
+Since it doubles every year, the price after 5 years times 2 equals the price after 6 years
+
+[RESPONSE]

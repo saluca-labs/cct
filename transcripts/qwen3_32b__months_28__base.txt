@@ -1,0 +1,9 @@
+COND=base
+SERVED_REFS=[]
+
+[THINKING]
+Okay, so the question is: "Some months have 31 days. How many months have 28 days?" Hmm, let's see. I remember that February is the month that typically has 28 days, right? But wait, isn't it that all months have at least 28 days? Because even months with 30 or 31 days still have 28 days, just more beyond that. Let me think. For example, January has 31 days, so it definitely has 28 days plus a few more. Similarly, April has 30 days, so it also includes 28 days. So the trick here might be that every month has at least 28 days, not just February. The question is phrased in a way that might be trying to trip me up by making me think only about February. But actually, all 12 months have 28 days. Because even if a month has more days, it still has 28. So the answer should be 12 months.
+
+
+[RESPONSE]
+Answer: 12

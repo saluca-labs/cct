@@ -1,0 +1,15 @@
+COND=mindset
+SERVED_REFS=[]
+
+[THINKING]
+Okay, let's see. The problem says a pen and a notebook together cost $5.50. And the notebook costs $5.00 more than the pen. I need to find out how much the pen costs.
+
+Hmm, let me break this down. Let's call the cost of the pen "P" and the notebook "N". So the first equation would be P + N = 5.50. Then, the second part says the notebook costs $5 more than the pen. That means N = P + 5.00. 
+
+Wait, so if I substitute the second equation into the first one, that should work. Let me try that. So replacing N in the first equation with (P + 5), we get P + (P + 5) = 5.50. That simplifies to 2P + 5 = 5.50. 
+
+Subtracting 5 from both sides gives 2P = 0.50. Then dividing both sides by 2, P = 0.25. So the pen costs $0.25. Let me check that again. If the pen is $0.25, then the notebook is $0.25 + $5.00 = $5.25. Adding them together: 0.25 + 5.25 = 5.50. Yep, that matches the total given. So the answer should be $0.25 for the pen.
+
+
+[RESPONSE]
+Answer: 0.25

@@ -1,0 +1,27 @@
+COND=ref_wrong
+SERVED_REFS=[]
+
+[THINKING]
+Okay, let's see. The problem says a farmer has 15 cows. All but 6 run away. How many cows remain?
+
+Hmm. So the farmer starts with 15 cows. The key part here is "All but 6 run away." That phrase can sometimes be tricky. Let me parse it. "All but 6" means that out of the total number, if you take away 6, the rest ran away. Wait, no. Wait, if all but 6 run away, then the remaining ones are the 6. Because "all" except for 6 ran away. So the cows that remain are the 6. Let me check that again.
+
+If "all but 6 run away," that means that the cows that didn't run away are the 6. So the total number of cows was 15. If 6 didn't run away, then the rest did. So the ones that remain are 6. But wait, the problem is asking how many remain. So the answer is 6? But the reference solution says 9. Wait, that's conflicting. Did I misread the problem?
+
+Wait, maybe I got it backwards. Let me think again. "All but 6 run away." So "all" cows except 6 run away. So the ones that ran away are the total minus 6. So total is 15. So 15 - 6 = 9 ran away. Therefore, the ones remaining are 6. But the reference solution says 9. That would mean that the answer is 9. Hmm. Wait, perhaps I'm misinterpreting the phrase.
+
+Wait, maybe "all but 6 run away" is interpreted as all cows except 6 remain. But that would be a different meaning. Let me check. The phrase "all but X" can be confusing. For example, "All but 6 were eaten" would mean that 6 were left. So if "all but 6 cows run away," then the 6 are the ones that didn't run away. Therefore, remaining cows would be 6. But the reference solution says 9. So there's a contradiction here. Maybe the problem is phrased differently. Let me re-express the problem.
+
+Original problem: "A farmer has 15 cows. All but 6 run away. How many cows remain?"
+
+So "All but 6 run away." So "All" of the cows, except for 6, run away. Therefore, the 6 are left. Therefore, the answer should be 6. But the reference says 9. That suggests that maybe the problem is phrased in a way that "all but 6" refers to the ones that ran away, not the ones that remained. Wait, that would be odd. Let me think again.
+
+Suppose the problem is "All but 6 run away." So, "All" cows except for 6 run away. So, the 6 are the ones that didn't run away. Therefore, the remaining cows are 6. But the reference solution says 9. That suggests that maybe the problem is phrased as "All but 6 ran away," meaning that the 6 ran away, and the rest remained. But that's not how the phrase is typically used.
+
+Wait, let me look up the standard interpretation of "all but X." For example, if someone says "All but three people arrived," that means three people did not arrive. So in this case, "All but 6 cows run away" would mean that 6 cows did not run away. Therefore, the answer should be 6. However, the reference solution is 9. So perhaps there's a misinterpretation here. Maybe the problem is in the translation or phrasing. Alternatively, maybe the problem is a trick question where "run away" is taken as leaving, so the ones that ran away are the ones that are no longer there, so the remaining are the ones that didn't run away. So if 15 total, and "all but 6 run away," then 15 - (all but 6) = 6 remain. But maybe the problem is phrased as "All but 6 run away," meaning that 6 ran away. Wait, that would make the remaining 15 - 6 = 9. But that would be if the problem said "6 run away," not "all but 6 run away." 
+
+This is confusing. Let me try to think of it mathematically. Let me define variables. Let total cows = 15. Let R be the number that ran away. The problem says "All but 6 run away." So, this can be written as R = total - 6. So R = 15 - 6 = 9. Therefore, 9 cows ran away. Therefore, the number remaining is total - R = 15 - 9 = 6. So the answer is 6. But the reference solution is 9. So there's a contradiction here. Unless the problem is phrased differently. Maybe the problem is "All but 6 remain," but the user wrote "run away." 
+
+Wait, the user says the reference solution is 9. So maybe there's a misunderstanding in the problem's phrasing. Let me check again. The problem says: "All but 6 run away." So if all but 6 run away, then 15 - 6 = 9 ran away. Therefore, the number remaining is 6. But if the answer is 9, then perhaps the problem is "All but 6 remain," which would mean that 6 ran away, leaving 15 - 6 = 9
+
+[RESPONSE]

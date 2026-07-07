@@ -1,0 +1,13 @@
+COND=ref_wrong
+SERVED_REFS=[]
+
+[THINKING]
+Okay, let's see. The problem says Emily's father has three daughters. The first two are named April and May. What's the name of the third daughter?
+
+Wait, so the father has three daughters. The first two are April and May. The question is asking for the third one's name. Hmm. But wait, the problem starts by saying "Emily's father has three daughters." So Emily is one of them, right? Because Emily is the daughter of the father mentioned. So if the first two daughters are April and May, then the third one must be Emily. Because the father's daughters are April, May, and Emily. So the third daughter's name is Emily.
+
+But let me make sure I didn't miss anything. The problem states that Emily's father has three daughters. The first two are April and May. So the third daughter's name is... Well, since Emily is the daughter of this father, she must be the third one. So the answer should be Emily. Let me check again. The father has three daughters: April, May, and someone else. But the problem is presented in the context of Emily's father, so the third daughter is Emily. Yeah, that makes sense. The trick here might be that people might overlook that Emily is one of the daughters. But the question is straightforward once you realize that.
+
+
+[RESPONSE]
+Answer: Emily

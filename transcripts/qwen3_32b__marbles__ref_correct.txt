@@ -1,0 +1,19 @@
+COND=ref_correct
+SERVED_REFS=[]
+
+[THINKING]
+Okay, let's see. The problem says Tom has twice as many marbles as Jerry. And together they have 36 marbles. I need to find out how many marbles Tom has.
+
+Hmm, so first, maybe I should assign some variables here. Let me think. If I let the number of marbles Jerry has be a variable, maybe J. Then Tom has twice as many, so Tom's marbles would be 2 times J, right? So Tom is 2J.
+
+Then together, their marbles add up to 36. So that means J (Jerry's marbles) plus 2J (Tom's marbles) equals 36. So J + 2J = 36. Let me write that equation down: J + 2J = 36. Combining those terms, that's 3J = 36. Then to solve for J, I divide both sides by 3. So J = 36 / 3 = 12. So Jerry has 12 marbles.
+
+But the question is asking for how many marbles Tom has. Since Tom has twice as many as Jerry, Tom would have 2 * 12 = 24 marbles. Let me check that again. If Jerry has 12 and Tom has 24, together they have 12 + 24 = 36, which matches the problem statement. And Tom does have twice as many as Jerry (24 is twice 12). So that seems to fit.
+
+Wait, is there another way to approach this? Maybe using ratios? The ratio of Tom's marbles to Jerry's is 2:1. So the total parts are 2 + 1 = 3 parts. The total marbles are 36, so each part is 36 / 3 = 12. Therefore, Tom has 2 parts, which is 2 * 12 = 24. Yep, same answer. So that checks out.
+
+I think that's solid. Both methods lead to Tom having 24 marbles. So the answer should be 24.
+
+
+[RESPONSE]
+Answer: 24

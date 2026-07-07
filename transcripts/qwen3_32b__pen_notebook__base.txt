@@ -1,0 +1,37 @@
+COND=base
+SERVED_REFS=[]
+
+[THINKING]
+Okay, let's see. There's a problem here where a pen and a notebook together cost $5.50. The notebook is $5.00 more than the pen. I need to find out how much the pen costs. Hmm, okay, let me try to break this down.
+
+First, let me assign variables. Let me call the cost of the pen as P dollars. Then, since the notebook costs $5.00 more than the pen, the notebook would be P + $5.00. Right? So the pen is P, the notebook is P + 5.
+
+Now, together they cost $5.50. So adding them together, P (pen) plus (P + 5) (notebook) equals 5.50. Let me write that out as an equation:
+
+P + (P + 5) = 5.50
+
+Simplifying that, combine like terms. P + P is 2P, and then +5 equals 5.50. So:
+
+2P + 5 = 5.50
+
+Now, I need to solve for P. Let me subtract 5 from both sides. So:
+
+2P = 5.50 - 5
+
+Which is 2P = 0.50
+
+Then, divide both sides by 2:
+
+P = 0.50 / 2 = 0.25
+
+So the pen costs $0.25. Let me check if that makes sense. If the pen is $0.25, then the notebook is $0.25 + $5.00 = $5.25. Adding them together: $0.25 + $5.25 = $5.50. Yep, that matches the total given in the problem. So that seems right.
+
+Wait, but sometimes these problems can be tricky. Let me make sure I didn't misinterpret the "more than" part. The problem says the notebook costs $5.00 more than the pen. So if the pen is P, then the notebook is P + 5. That seems correct. So yes, when P is 0.25, notebook is 5.25, which is indeed $5.00 more than the pen. Because 5.25 - 0.25 is 5.00. So that checks out.
+
+Another way to think about it: suppose the pen was, say, $1.00. Then the notebook would be $6.00, totaling $7.00, which is way over. If the pen was $0.50, notebook is $5.50, total is $6.00. Still too high. If the pen is $0.25, then notebook is $5.25, total $5.50. Perfect. So that seems correct.
+
+I think that's it. The pen costs 25 cents.
+
+
+[RESPONSE]
+Answer: 0.25

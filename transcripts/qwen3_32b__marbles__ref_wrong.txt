@@ -1,0 +1,37 @@
+COND=ref_wrong
+SERVED_REFS=[]
+
+[THINKING]
+Okay, let's see. The problem says Tom has twice as many marbles as Jerry. Together, they have 36 marbles. I need to find out how many marbles Tom has.
+
+Hmm, so first, maybe I should assign variables to represent the number of marbles each has. Let me think. Let's say Jerry has some number of marbles. If I call that number J, then Tom has twice as many, right? So Tom would have 2 times J marbles. That makes sense.
+
+Now, together they have 36 marbles. So if I add Jerry's marbles and Tom's marbles, that should equal 36. So in equation terms, that would be J (Jerry's marbles) plus 2J (Tom's marbles) equals 36. Let me write that down:
+
+J + 2J = 36
+
+Combining those terms, that would be 3J = 36. To find J, I can divide both sides by 3. So 36 divided by 3 is 12. That means Jerry has 12 marbles. Since Tom has twice as many as Jerry, Tom must have 2 times 12, which is 24. Wait, but wait a second. The reference solution says the answer is 18. Hmm, that doesn't match. Did I do something wrong here?
+
+Let me check my equations again. If Tom has twice as many marbles as Jerry, then Tom = 2 * Jerry. Together, their marbles add up to 36. So Tom + Jerry = 36. So substituting, 2J + J = 36. That's 3J = 36. So J = 12. Then Tom is 24. But the reference solution says 18. That's conflicting. Maybe I misunderstood the problem?
+
+Wait, maybe I misread the problem. Let me check again. The problem says Tom has twice as many marbles as Jerry. So Tom is twice Jerry. So Tom = 2 * Jerry. Together, they have 36. So my equations are correct. Then why is the reference answer 18?
+
+Wait, maybe the reference solution is wrong? Or maybe I made a mistake in arithmetic. Let's recalculate. 3J = 36. So J = 36 / 3 = 12. Then Tom is 2 * 12 = 24. So that would make Tom have 24 marbles. But the reference says 18. That's not matching. Maybe there's a different way to interpret the problem?
+
+Wait, maybe the problem was stated differently. Let me check again. "Tom has twice as many marbles as Jerry. Together they have 36 marbles. How many marbles does Tom have?" So if Tom has twice as many as Jerry, then if Jerry has 12, Tom has 24, total 36. That's correct. But the reference says 18. So there must be a mistake somewhere. Wait, maybe the problem was supposed to say "Tom has twice as many marbles as Jerry, but he gave some away..." or something else? No, the problem as given is as stated.
+
+Alternatively, maybe the problem is phrased differently. For example, sometimes people confuse "twice as many as" in different contexts. But in standard math problems, "Tom has twice as many as Jerry" means Tom's amount is two times Jerry's. So if Tom has twice as many as Jerry, then yes, J + 2J = 36. So 3J=36, J=12, Tom=24. So the correct answer should be 24. But the reference says 18. That's confusing.
+
+Wait, maybe the problem is in the translation. If the original problem was in another language, maybe "twice as many as" was misinterpreted. But assuming the problem is correctly translated, then the answer should be 24. But according to the user, the reference solution is 18. So there's a contradiction here. What could be the reason?
+
+Alternatively, maybe the problem is about marbles that they have together, but maybe there's a different interpretation. For example, if the problem had said "Tom has twice as many as Jerry, and together with Jerry, they have 36," but that's the same as the original problem. Hmm.
+
+Wait, maybe the problem was phrased as "Tom has twice as many marbles as Jerry. If they have 36 marbles in total..." which is the same thing. So the math still leads to 24. Unless there's a miscalculation. Let me verify once more.
+
+Let me use substitution. Let me assume Jerry has x marbles. Then Tom has 2x marbles. Together, x + 2x = 3x = 36. So x = 12. Then Tom has 2x = 24. So 24 is correct. But the reference says 18. Therefore, either the reference is incorrect, or there's a misunderstanding in the problem's phrasing.
+
+Wait, maybe the problem was "Tom has twice as many marbles as Jerry. Jerry has 36 marbles. How many do they have together?" But that's not the problem stated. The problem states "Together they have 36 marbles." So that would not be the case.
+
+Alternatively, maybe the problem was "Tom has twice as many marbles as Jerry, and Tom has 36 marbles. How many do they have together?" But that would be Tom = 
+
+[RESPONSE]

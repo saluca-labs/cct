@@ -1,0 +1,17 @@
+COND=ref_correct
+SERVED_REFS=[]
+
+[THINKING]
+Okay, let's see. The problem says a bottle and a cork cost $2.20. The bottle costs $2.00 more than the cork. I need to find out how much the cork costs.
+
+Hmm. Let me start by setting up some variables. Let me call the cost of the cork "C" and the cost of the bottle "B". According to the problem, the total cost is B + C = $2.20. Also, the bottle costs $2.00 more than the cork, so that would be B = C + $2.00.
+
+So substituting the second equation into the first one. If B is equal to C plus 2, then I can replace B in the first equation. So, (C + 2) + C = 2.20. Combining like terms, that's 2C + 2 = 2.20.
+
+Subtracting 2 from both sides gives 2C = 0.20. Then dividing both sides by 2, C = 0.10. So the cork costs $0.10. Let me check that again. If the cork is $0.10, then the bottle is $2.10 (since it's $2.00 more than the cork). Adding them together, 0.10 + 2.10 = 2.20, which matches the total given. That seems right. Wait, but sometimes these problems have tricks. Let me make sure I didn't misread anything.
+
+The problem states the bottle costs $2.00 more than the cork. So if the cork is 10 cents, then the bottle is 2.10, which is indeed 2.00 more than 0.10. Yes, that works. So the answer should be 0.10. I think that's correct. Maybe people might think the cork is $1.00 and the bottle is $2.00, but then the total would be $3.00, which is more than the given $2.20. So that's not right. So yeah, the correct answer is 10 cents.
+
+
+[RESPONSE]
+Answer: 0.10

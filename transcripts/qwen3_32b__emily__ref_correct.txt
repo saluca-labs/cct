@@ -1,0 +1,13 @@
+COND=ref_correct
+SERVED_REFS=[]
+
+[THINKING]
+Okay, let's see. The problem says Emily's father has three daughters. The first two are named April and May. The question is asking for the name of the third daughter.
+
+Hmm, so if Emily's father has three daughters, and two of them are April and May, then the third one must be... Wait, the problem mentions Emily's father. So Emily is one of the daughters, right? Because the father has three daughters, and Emily is one of them. So the three daughters would be April, May, and Emily. Therefore, the third daughter's name is Emily. 
+
+Wait, let me make sure I'm not missing anything. The problem states that Emily's father has three daughters. The first two are April and May. So the daughters are April, May, and the third one. But since Emily is the daughter of the father, the third daughter must be Emily. So the answer is Emily. Yeah, that makes sense. Sometimes these riddles are tricky because they mention Emily in the question, but the answer is right there. So the third daughter's name is Emily.
+
+
+[RESPONSE]
+Answer: Emily

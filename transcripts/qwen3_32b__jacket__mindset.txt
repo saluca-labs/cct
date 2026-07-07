@@ -1,0 +1,13 @@
+COND=mindset
+SERVED_REFS=['intractable:B. Instrumental Belief — hold beliefs as', 'intractable:A. Direction Selection — choose a win-wi']
+
+[THINKING]
+Okay, let's see. The problem says a jacket's price doubles every year. After 6 years, it costs $640. We need to find out what it cost after 5 years.
+
+Hmm, so if the price doubles each year, that means each year's price is twice the previous year's. So working backwards might be easier here. If after 6 years it's $640, then the year before that, which is year 5, the price must have been half of $640. Because doubling from year 5 to year 6 would get to 640. So half of 640 is 320. So after 5 years, the cost should be $320.
+
+Let me double-check. Let's think about it step by step. Suppose the initial price is P. After 1 year: 2P. After 2 years: 4P. After 3 years: 8P. Wait, actually, each year it's multiplied by 2. So after n years, the price is P * 2^n. But here, after 6 years, it's 640. So P * 2^6 = 640. Solving for P: P = 640 / 64 = 10. So the original price was $10. Then after 5 years, it would be 10 * 2^5 = 10 * 32 = 320. Yep, that matches the earlier thought. So the answer is $320.
+
+
+[RESPONSE]
+Answer: 320

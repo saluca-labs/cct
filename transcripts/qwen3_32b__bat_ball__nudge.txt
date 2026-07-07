@@ -1,0 +1,15 @@
+COND=nudge
+SERVED_REFS=[]
+
+[THINKING]
+Okay, let's try to figure this out. So, the problem says that a bat and a ball together cost $1.10. Also, the bat costs $1.00 more than the ball. The question is asking how much the ball costs.
+
+Hmm, my first thought might be that if the total is $1.10 and the bat is $1.00 more, then maybe the ball is $0.10. Because $1.00 more than $0.10 is $1.10, and adding the ball's $0.10 would make $1.20. Wait, that doesn't add up to $1.10. So that's probably wrong. But why did I think that? Because it's the obvious answer, but maybe I need to check the math again.
+
+Let me set up some equations. Let's let the cost of the ball be x dollars. Then the bat costs x + $1.00. Together, their total cost is x + (x + 1.00) = 1.10. So that's 2x + 1.00 = 1.10. Subtract 1.00 from both sides: 2x = 0.10. Then divide by 2: x = 0.05. So the ball is $0.05. Let me check that. If the ball is $0.05, then the bat is $1.05. Together, 0.05 + 1.05 = 1.10. Yes, that works. 
+
+But wait, my initial thought was $0.10, but that led to a total of $1.20. So the correct answer must be $0.05. The trick here is that the bat is $1.00 more than the ball, so when you add the ball's price to the bat's price (which is the ball's price plus $1.00), you have to make sure the total is $1.10. The equations show that the ball is indeed $0.05. So the answer is 5 cents.
+
+
+[RESPONSE]
+Answer: 0.05

@@ -1,0 +1,19 @@
+COND=nudge
+SERVED_REFS=[]
+
+[THINKING]
+Okay, let's see. The problem is about socks in a drawer. There are 10 red and 10 blue socks. I need to figure out how many socks I must take out to be certain of having a matching pair. Hmm.
+
+First, I remember something about the pigeonhole principle. Like, if there are more items than containers, at least one container has more than one item. But how does that apply here?
+
+So, the colors are two: red and blue. If I take out socks, the worst-case scenario is that I get as many different colors as possible before getting a match. Wait, but there are only two colors. So the worst case would be taking one of each color first. Let me think.
+
+If I take two socks, they could be one red and one blue. Then I don't have a matching pair. If I take three socks, then even if the first two were one red and one blue, the third one has to be either red or blue. So that third sock would match one of the first two. So three socks would guarantee a pair. But wait, the numbers here are 10 each. Does that affect it?
+
+Wait, the number of socks per color might not matter here. Because even if there were, say, 1 red and 100 blue socks, to be certain of a pair, you still need to consider the worst case. So, if there are two colors, the maximum number of socks you can have without a pair is two (one of each color). Then the next sock would have to create a pair. So regardless of how many socks there are in total, as long as there are at least two colors, the number needed is color count plus one? Wait, no. The pigeonhole principle says that with n holes, if you have n+1 pigeons, at least one hole has two pigeons. So here, the "holes" would be the colors. So if there are two colors (holes), then taking three socks (pigeons) ensures that at least two are of the same color. So the answer should be three.
+
+But let me test this. Suppose there are two colors. If I take one sock, it's either red or blue. Second sock could be the same or different. If different, then third sock must be one of the two colors, so a pair is formed. So yes, three socks. But the question says 10 red and 10 blue. The numbers here are the same for each color, but even if they were different, like 1 red and 10 blue, the worst case would still be taking one red and one blue first. Then the third sock would have to be blue, making a pair. So even if there's only one red sock, taking three socks would still guarantee a pair. So the answer is three. Wait, but why does the problem mention there are 10 of each? Maybe to trick us into thinking about more possibilities? Like if there were more colors? But here there are only two. So the answer is three. Let me check again. Suppose you take two socks. There's a chance they are both red or both blue. But there's also a chance they are one of each. So to be certain, you need to eliminate that possibility. Therefore, three socks. So Answer: 3.
+
+
+[RESPONSE]
+Answer: 3

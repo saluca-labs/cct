@@ -1,0 +1,41 @@
+COND=mindset_ref_wrong
+SERVED_REFS=[]
+
+[THINKING]
+Okay, let's see. The problem says a bottle and a cork cost $2.20. The bottle costs $2.00 more than the cork. We need to find out how much the cork costs.
+
+Hmm. Let me break it down. Let me call the cost of the cork as x dollars. Then, the bottle would be x plus $2.00, right? Because the bottle is $2 more than the cork. So the total cost is the sum of the bottle and the cork, which is x (cork) + (x + 2) (bottle) equals $2.20.
+
+So the equation would be x + x + 2 = 2.20. Simplifying that, 2x + 2 = 2.20. Then subtract 2 from both sides: 2x = 0.20. Divide both sides by 2, so x is 0.10. Wait, but the reference solution says the answer is 0.20. Did I do something wrong here?
+
+Wait, maybe I made a mistake in setting up the equation. Let me check again. The total is $2.20. The bottle is $2 more than the cork. So if the cork is x, the bottle is x + 2. So total is x + (x + 2) = 2.20. That's 2x + 2 = 2.20. Subtract 2 gives 2x = 0.20. So x is 0.10. But according to the reference solution, the answer is 0.20. That's conflicting. Maybe the problem is in the interpretation of "more than"?
+
+Wait, maybe the problem says the bottle costs $2 more than the cork. So if the cork is x, the bottle is x + 2. So total is x + x + 2 = 2.20. So solving again, 2x = 0.20, x=0.10. So cork is $0.10, bottle is $2.10. Total is $2.20. That seems correct. But the reference answer is 0.20. Maybe the problem was phrased differently? Wait, perhaps I misread the problem. Let me check again.
+
+The problem states: "A bottle and a cork cost $2.20. The bottle costs $2.00 more than the cork. How much does the cork cost?" So according to the problem, the bottle is $2 more than the cork. So the equation should be correct. But according to my calculation, the cork is 10 cents. But the reference answer is 0.20. That's a discrepancy. Maybe there's a trick here. Wait, perhaps the problem is in the way the total is presented. Let me try another approach.
+
+Suppose the cork is $0.20. Then the bottle would be $2.20 more than that? No, the bottle is $2 more than the cork. If the cork is $0.20, then the bottle is $2.20. Total would be 0.20 + 2.20 = $2.40. But the total is supposed to be $2.20. That's too much. So that can't be right. So if the cork is $0.10, the bottle is $2.10. Total is $2.20. That works. So why does the reference solution say 0.20? Maybe there's an error in the reference solution, or perhaps I'm misunderstanding the problem.
+
+Wait, maybe the problem is phrased as "the bottle costs $2 more than the cork," which is exactly what I considered. So maybe the reference solution is wrong? Or perhaps there's a different way to interpret the problem. Let me think again.
+
+Another way: Let me use algebra. Let B be the cost of the bottle, C the cork. Then:
+
+B + C = 2.20
+
+B = C + 2.00
+
+Substitute the second equation into the first:
+
+(C + 2.00) + C = 2.20
+
+2C + 2.00 = 2.20
+
+2C = 0.20
+
+C = 0.10
+
+So the cork is 10 cents. Therefore, the answer should be 0.10. But the reference solution says 0.20. This is confusing. Unless there's a mistake in the problem's reference solution. Alternatively, maybe the problem was misstated here. Wait, perhaps the problem says the bottle costs $2 more, but the total is $2.20. So if the cork is 0.20, then the bottle would be 0.20 + 2.00 = 2.20, total would be 2.40. Which is more than 2.20. So that's not possible. Therefore, the correct answer should be 0.10. However, the reference says 0.20. Maybe the problem was written differently. Wait, maybe the problem was "the bottle costs twice as much as the cork," but that's not what's stated here. The problem says "the bottle costs $2.00 more than the cork."
+
+Alternatively, maybe the problem is in another currency where decimal points are different? But the question uses dollars. Hmm. So unless there's a trick in the wording, like the total is $2.20, but the difference is $2.00.
+
+[RESPONSE]

@@ -1,0 +1,105 @@
+{
+  "bat_ball": [
+    "intractable:A. Direction Selection — choose a win-wi"
+  ],
+  "pen_notebook": [],
+  "bottle_cork": [],
+  "widgets": [
+    "intractable:D. Standing Posture — you need no permis",
+    "subdomain:A",
+    "intractable:A. Direction Selection — choose a win-wi",
+    "intractable:B. Instrumental Belief — hold beliefs as"
+  ],
+  "gadgets": [
+    "intractable:D. Standing Posture — you need no permis",
+    "subdomain:A",
+    "intractable:A. Direction Selection — choose a win-wi",
+    "intractable:B. Instrumental Belief — hold beliefs as"
+  ],
+  "lily_pads": [
+    "intractable:A. Direction Selection — choose a win-wi",
+    "intractable:B. Instrumental Belief — hold beliefs as",
+    "intractable:D. Standing Posture — you need no permis",
+    "subdomain:A"
+  ],
+  "jacket": [
+    "intractable:B. Instrumental Belief — hold beliefs as",
+    "intractable:A. Direction Selection — choose a win-wi"
+  ],
+  "sheep": [
+    "intractable:A. Direction Selection — choose a win-wi",
+    "intractable:B. Instrumental Belief — hold beliefs as",
+    "intractable:C. Productive Failure — pivot the failed"
+  ],
+  "cows": [
+    "intractable:B. Instrumental Belief — hold beliefs as",
+    "intractable:C. Productive Failure — pivot the failed",
+    "intractable:A. Direction Selection — choose a win-wi"
+  ],
+  "months_28": [],
+  "apples_take": [
+    "intractable:B. Instrumental Belief — hold beliefs as",
+    "intractable:C. Productive Failure — pivot the failed",
+    "intractable:A. Direction Selection — choose a win-wi",
+    "subdomain:A"
+  ],
+  "pills": [
+    "intractable:A. Direction Selection — choose a win-wi",
+    "intractable:B. Instrumental Belief — hold beliefs as",
+    "intractable:D. Standing Posture — you need no permis",
+    "subdomain:A"
+  ],
+  "subtract_5": [
+    "spine",
+    "subdomain:D",
+    "intractable:Intractable — Attacking Problems That Ma",
+    "intractable:A. Direction Selection — choose a win-wi"
+  ],
+  "race_2nd": [
+    "intractable:D. Standing Posture — you need no permis",
+    "intractable:C. Productive Failure — pivot the failed",
+    "spine",
+    "subdomain:D"
+  ],
+  "race_last": [
+    "intractable:D. Standing Posture — you need no permis",
+    "intractable:C. Productive Failure — pivot the failed",
+    "spine",
+    "subdomain:D"
+  ],
+  "emily": [
+    "intractable:A. Direction Selection — choose a win-wi",
+    "intractable:C. Productive Failure — pivot the failed"
+  ],
+  "survivors": [
+    "intractable:Intractable — Attacking Problems That Ma",
+    "spine",
+    "subdomain:D",
+    "intractable:A. Direction Selection — choose a win-wi"
+  ],
+  "apples_shop": [],
+  "marbles": [],
+  "train": [],
+  "sara_age": [
+    "intractable:A. Direction Selection — choose a win-wi",
+    "intractable:B. Instrumental Belief — hold beliefs as"
+  ],
+  "handshakes": [
+    "intractable:A. Direction Selection — choose a win-wi",
+    "intractable:B. Instrumental Belief — hold beliefs as",
+    "intractable:D. Standing Posture — you need no permis",
+    "intractable:Intractable — Attacking Problems That Ma"
+  ],
+  "socks": [
+    "intractable:C. Productive Failure — pivot the failed",
+    "intractable:B. Instrumental Belief — hold beliefs as",
+    "intractable:D. Standing Posture — you need no permis",
+    "intractable:A. Direction Selection — choose a win-wi"
+  ],
+  "wine_water": [
+    "intractable:A. Direction Selection — choose a win-wi",
+    "intractable:B. Instrumental Belief — hold beliefs as",
+    "subdomain:A",
+    "spine"
+  ]
+}

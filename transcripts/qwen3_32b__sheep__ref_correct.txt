@@ -1,0 +1,13 @@
+COND=ref_correct
+SERVED_REFS=[]
+
+[THINKING]
+Okay, let's see. The problem says a farmer had 17 sheep. All but 9 died. How many are left?
+
+Hmm, so first, the farmer starts with 17. The key part here is "all but 9 died." That phrase can be a bit tricky. Let me break it down. "All but 9" means that out of the total, 9 survived and the rest died. So if there were 17 sheep originally, and all except 9 died, then the number of sheep left would be the 9 that survived. 
+
+Wait, maybe I should think of it mathematically. If all but 9 died, that means the number of sheep that died is total minus 9. So total is 17. So died = 17 - 9 = 8. Then the ones left are 9. So yes, that makes sense. The problem is phrased to trick you into subtracting 9 from 17, but actually, "all but 9 died" directly tells you that 9 are left. So the answer is 9. Let me check again. Original count 17. All but 9 died. So 9 are alive. Yep, that's straightforward. Sometimes these problems are designed to test if you get confused by the wording. But breaking it down, "all but 9" means 9 survived. So the answer should be 9.
+
+
+[RESPONSE]
+Answer: 9

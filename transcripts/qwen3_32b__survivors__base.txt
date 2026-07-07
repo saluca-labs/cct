@@ -1,0 +1,9 @@
+COND=base
+SERVED_REFS=[]
+
+[THINKING]
+Okay, let's see. The question is about a plane crash on the border between the United States and Canada, and where to bury the survivors. Hmm, first, the key word here is "survivors." Wait, if there are survivors, they didn't die in the crash, right? So you don't bury survivors. That seems too straightforward, but maybe it's a trick question. Sometimes these riddles play on words. Like, if someone says "survivors," you might initially think of people who died, but actually, survivors are alive. So the answer would be that you don't bury them at all. Let me double-check. The question is phrased to maybe mislead you into thinking about where to bury the victims, but it specifically says "survivors." Yeah, survivors are alive, so you don't bury them. So the answer is that you don't bury survivors because they're still alive. The border part might be a red herring to make you focus on the location, but the real trick is the word "survivors."
+
+
+[RESPONSE]
+Answer: You don't bury survivors because they are alive.

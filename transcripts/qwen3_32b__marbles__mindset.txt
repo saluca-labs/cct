@@ -1,0 +1,11 @@
+COND=mindset
+SERVED_REFS=[]
+
+[THINKING]
+Okay, let's see. The problem says Tom has twice as many marbles as Jerry. Together they have 36 marbles. I need to find out how many marbles Tom has.
+
+Hmm, so if Tom has twice as many as Jerry, maybe I can represent Jerry's marbles with a variable. Let me think. Let's say Jerry has x marbles. Then Tom would have 2x marbles because he has twice as many. Together, their marbles add up to 36. So x (Jerry's) plus 2x (Tom's) equals 36. That would be x + 2x = 36. Combining like terms, that's 3x = 36. Then to solve for x, I divide both sides by 3. So x is 12. Wait, that would mean Jerry has 12 marbles, and Tom has 24. Let me check. 12 plus 24 is 36. Yeah, that adds up. So Tom has 24 marbles. That seems right. I don't think I made any mistakes here. The key was setting up the equation correctly based on the given ratio and total.
+
+
+[RESPONSE]
+Answer: 24

@@ -1,0 +1,29 @@
+COND=ref_correct
+SERVED_REFS=[]
+
+[THINKING]
+Okay, let's see. The problem says a pen and a notebook together cost $5.50. The notebook costs $5.00 more than the pen. I need to find out how much the pen costs.
+
+Hmm, so let me break this down. Let me assign variables to make it clearer. Let me call the cost of the pen as P dollars. Then the notebook would cost P plus $5.00, right? Because it's $5 more than the pen. So the notebook is P + 5.00.
+
+Now, together they cost $5.50. So adding the pen and the notebook together should equal 5.50. So the equation would be P (pen) + (P + 5.00) (notebook) = 5.50.
+
+Let me write that out:
+
+P + (P + 5.00) = 5.50
+
+Simplify that: 2P + 5.00 = 5.50
+
+Subtract 5.00 from both sides: 2P = 5.50 - 5.00 = 0.50
+
+Then divide both sides by 2: P = 0.50 / 2 = 0.25
+
+So the pen costs $0.25. Let me check that again.
+
+If the pen is $0.25, then the notebook is 0.25 + 5.00 = 5.25. Adding them together: 0.25 + 5.25 = 5.50. Yep, that matches the total given. So that seems right.
+
+Wait, but sometimes people get confused here. Like, if the notebook is $5 more than the pen, does that mean the total is pen plus (pen +5)? Yes. So the equations are correct. So the answer is 0.25. Let me just make sure there's no trick here. Sometimes problems like this are phrased in a way that can be misleading. For example, if someone reads it as the notebook is five times the pen or something else, but here it clearly says "more than the pen," so it's a direct addition. So yeah, the pen is 25 cents, the notebook is $5.25, total $5.50. All checks out.
+
+
+[RESPONSE]
+Answer: 0.25

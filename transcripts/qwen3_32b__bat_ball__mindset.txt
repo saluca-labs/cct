@@ -1,0 +1,17 @@
+COND=mindset
+SERVED_REFS=['intractable:A. Direction Selection — choose a win-wi']
+
+[THINKING]
+Okay, let's see. The problem says a bat and a ball together cost $1.10, and the bat is $1.00 more than the ball. I need to find the cost of the ball. Hmm, maybe I should set up some equations here.
+
+Let me denote the cost of the ball as x dollars. Then, the bat would cost x + $1.00, right? Because the bat is a dollar more than the ball. So, adding them together, the total is x (ball) + (x + 1.00) (bat) = 1.10.
+
+So combining those terms, that's 2x + 1.00 = 1.10. Subtracting 1.00 from both sides gives 2x = 0.10. Then dividing by 2, x = 0.05. So the ball costs 5 cents. Wait, but let me check if that's correct. If the ball is 5 cents, then the bat is 1.05 dollars. Adding them together, 0.05 + 1.05 = 1.10. That matches the total given. But wait, the problem says the bat costs $1.00 more than the ball. So if the ball is 10 cents, then the bat would be 1.10, but that would make the total 1.20. No, that's not right. So maybe my initial answer is correct. Wait, but sometimes people get confused here. Let me think again.
+
+Another way: Let me assume the ball is 10 cents. Then the bat is $1.00 more, so it's 1.10. Total would be 1.10 + 0.10 = 1.20, which is more than the given total. So that's not possible. So the ball must be 5 cents. Then the bat is 1.05, adding to 1.10. That works. So the answer should be 5 cents. I think that's right. But wait, maybe I made a mistake in setting up the equations. Let me write it again.
+
+Let the ball's cost be x. Then the bat is x + 1.00. Total is x + x + 1.00 = 1.10. So 2x = 0.10, x = 0.05. Yeah, that seems correct. So the answer is 5 cents.
+
+
+[RESPONSE]
+Answer: 0.05

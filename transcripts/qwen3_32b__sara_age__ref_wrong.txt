@@ -1,0 +1,74 @@
+COND=ref_wrong
+SERVED_REFS=[]
+
+[THINKING]
+Okay, let's see. The problem says Sara is three times as old as her brother right now. And in four years, she'll be twice as old as him. I need to find out how old Sara is now. Hmm, let's break this down.
+
+First, I should probably assign variables to their current ages. Let me think. Let's say Sara's current age is S, and her brother's current age is B. The first part says Sara is three times as old as her brother. So that translates to S = 3B. Got that part.
+
+Then, in four years, Sara's age will be S + 4, and her brother's age will be B + 4. At that time, she'll be twice as old as him. So that gives another equation: S + 4 = 2*(B + 4). Okay, so now I have two equations:
+
+1. S = 3B
+2. S + 4 = 2(B + 4)
+
+Now I need to solve these equations simultaneously. Since the first equation gives S in terms of B, maybe I can substitute that into the second equation. Let me try that.
+
+Substituting S = 3B into the second equation:
+
+3B + 4 = 2*(B + 4)
+
+Let me simplify the right side first. 2*(B + 4) is 2B + 8. So the equation becomes:
+
+3B + 4 = 2B + 8
+
+Now, subtract 2B from both sides to get:
+
+B + 4 = 8
+
+Then subtract 4 from both sides:
+
+B = 4
+
+Okay, so the brother is currently 4 years old. Since Sara is three times as old as her brother, S = 3B = 3*4 = 12. So Sara is 12 now?
+
+Wait, let me check if this works with the second condition. In four years, Sara will be 12 + 4 = 16, and her brother will be 4 + 4 = 8. Is 16 twice as old as 8? Yes, because 8*2 = 16. That checks out. So the answer should be 12?
+
+But wait, the reference solution says the answer is 6. Wait, that doesn't match. Did I do something wrong here?
+
+Hold on, maybe I made a mistake in setting up the equations. Let me go through the problem again.
+
+The problem states: Sara is 3 times as old as her brother. In 4 years, she will be twice as old as her brother. How old is Sara now?
+
+So current ages: Sara = 3 * brother's age.
+
+In four years: Sara's age + 4 = 2 * (brother's age + 4). That seems right.
+
+So with S = 3B, and S + 4 = 2(B + 4). Substituting S gives 3B + 4 = 2B + 8. Solving gives B = 4, S = 12. But reference says 6. That's conflicting.
+
+Wait, maybe the reference solution is wrong? Or maybe I messed up. Let me check again.
+
+If Sara is 12 now, brother is 4. In four years, Sara is 16, brother is 8. 16 is twice 8. That works. So maybe the reference solution is incorrect? Or perhaps the problem was miswritten?
+
+Alternatively, maybe I misread the problem. Let me check again.
+
+"Sara is 3 times as old as her brother. In 4 years, she will be twice as old as her brother. How old is Sara now?"
+
+No, that's correct. So according to my calculation, Sara is 12. But the reference says 6. Wait, maybe there's a different interpretation?
+
+Wait, maybe the problem is in the translation of "In 4 years, she will be twice as old as her brother." Does that mean in four years from now, or in four years from some other time? Probably from now. So the equations are correct.
+
+Alternatively, maybe the problem is not in the present. Let me think again. Let me try solving with Sara's age as 6. If Sara is 6, then her brother is 2 (since 6 is 3 times 2). In four years, Sara will be 10, brother will be 6. 10 is not twice 6. So that doesn't work. Therefore, 6 can't be the correct answer. So the reference solution must be wrong? Or perhaps there's a different setup?
+
+Wait, maybe the problem was supposed to say "In 4 years, she will be twice as old as her brother will be then." But that's the same as what I had. Hmm.
+
+Alternatively, maybe I need to use different variables? Let me try again.
+
+Let me define the brother's current age as x. Then Sara's current age is 3x. In four years, Sara will be 3x + 4, brother will be x + 4. The equation is 3x + 4 = 2*(x + 4). Solving:
+
+3x + 4 = 2x + 8
+
+Subtract 2x: x + 4 = 8 => x = 4. Therefore, Sara is 3x = 12. So same result. Therefore, unless there's a mistake in my math, which I don't see, the answer should be 12. But the reference says 6. Maybe the reference is wrong? Or perhaps there was a typo in the problem?
+
+Wait,
+
+[RESPONSE]

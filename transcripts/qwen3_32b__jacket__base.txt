@@ -1,0 +1,70 @@
+COND=base
+SERVED_REFS=[]
+
+[THINKING]
+Okay, let's see. The problem says that a jacket's price doubles every year. After 6 years, it costs $640. The question is asking what it cost after 5 years. Hmm, so I need to figure out the price at year 5, given that by year 6 it's $640. 
+
+First, let me make sure I understand the problem correctly. The price doubles each year. So if the initial price is, let's say, P, then after 1 year it becomes 2P, after 2 years it's 4P, and so on. Each year it's multiplied by 2. So the pattern is exponential growth with a base of 2. 
+
+The formula for the price after n years would be P * 2^n, where P is the original price. But wait, actually, if the price doubles every year, then after 1 year it's multiplied by 2 once, after 2 years by 2 twice, so yeah, the formula is P * 2^n. 
+
+But here, we are given the price after 6 years, which is $640. So maybe I can use this information to find out the original price, and then use that to find the price after 5 years. Alternatively, since the price doubles each year, maybe there's a simpler way to go from year 6 to year 5.
+
+Let me think. If after 6 years it's $640, then the price after 5 years would be half of that, right? Because each year the price is doubling. So going backward in time, the price would be halved each year. So if in year 6 it's $640, then in year 5 it must have been $640 divided by 2, which is $320. 
+
+Wait, is that correct? Let me check with the formula. Let's denote the original price as P. Then after 6 years, the price is P * 2^6 = 64P. According to the problem, this equals $640. So 64P = 640. Solving for P, we get P = 640 / 64 = 10. So the original price was $10. 
+
+Then, after 5 years, the price would be P * 2^5 = 10 * 32 = 320. Which matches the earlier thought. So that seems to check out. 
+
+Alternatively, maybe I can think of it step by step. Let's say the price after 0 years is the original price, let's call it P. 
+
+After 1 year: 2P  
+After 2 years: 4P  
+After 3 years: 8P  
+After 4 years: 16P  
+After 5 years: 32P  
+After 6 years: 64P  
+
+Given that after 6 years it's 64P = $640, so P = 10. Then after 5 years, it's 32P = 32*10 = $320. 
+
+So either way, whether I use the formula directly or break it down step by step, I get that after 5 years the price is $320. 
+
+Is there any chance I could have made a mistake here? Let me verify once more. 
+
+If the jacket's price doubles every year, then each subsequent year's price is twice the previous. Therefore, if in year 5 it's X, then year 6 is 2X. Given that 2X = 640, solving for X gives X = 320. That's straightforward. 
+
+Therefore, regardless of the method, the answer seems to be $320. 
+
+I think that's solid. The key insight here is recognizing that since the price doubles each year, you can reverse the process by halving each year you go back. So from year 6 to year 5, you just divide by 2. The fact that the problem gives the price after 6 years and asks for 5 years means you don't need to calculate the original price or use exponents beyond 2^1, which simplifies things. 
+
+But just to make sure, let's try calculating all the years step by step with the original price of $10. 
+
+Year 0: $10  
+Year 1: $20  
+Year 2: $40  
+Year 3: $80  
+Year 4: $160  
+Year 5: $320  
+Year 6: $640  
+
+Yes, that's exactly as expected. Each year it's doubling. So after 5 years, it's $320, and after 6 years, it doubles to $640. 
+
+Therefore, the answer should be $320. 
+
+**Final Answer**
+Answer: 320
+
+
+[RESPONSE]
+To solve the problem, we begin by analyzing the given scenario: the jacket's price **doubles every year**, and after **6 years**, the price is **$640**. The task is to determine what the jacket cost **after 5 years**.
+
+---
+
+### Step-by-Step Reasoning:
+
+Since the price doubles each year, we can think of the price after 6 years as being **twice** the price after 5 years. This is because the price in year 6 is obtained by doubling the year 5 price.
+
+Let’s denote the price after 5 years as $ x $. Then:
+
+$$
+\text{Price after 6 years} = 2 \

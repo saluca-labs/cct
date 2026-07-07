@@ -1,0 +1,13 @@
+COND=mindset
+SERVED_REFS=['intractable:A. Direction Selection — choose a win-wi', 'intractable:B. Instrumental Belief — hold beliefs as', 'intractable:D. Standing Posture — you need no permis', 'subdomain:A']
+
+[THINKING]
+Okay, let's see. The problem is about lily pads doubling in size each day. The whole lake is covered in 48 days. I need to find out how long it takes to cover half the lake.
+
+Hmm, so if the patch doubles every day, then on day 48 it's full. So the day before that, day 47, it must have been half the lake. Because if it doubles from day 47 to 48, then day 47 was half. So the answer should be 47 days. Wait, is that right? Let me check again.
+
+If the patch doubles in size each day, then each day's size is twice the previous day's. So if the entire lake is covered on day 48, then the day before, it was half the lake. Because doubling half the lake gives the full lake. So yes, day 47 would be half. Therefore, the time to cover half the lake is 47 days. That seems straightforward, but maybe I'm missing something. Let me think of another example. Suppose the lake is covered in 3 days. Then day 3 is full, day 2 is half, day 1 is a quarter. So yes, the half coverage is one day before full. So applying the same logic here, 48 days full, half is 47 days. I think that's correct.
+
+
+[RESPONSE]
+Answer: 47

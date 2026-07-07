@@ -1,0 +1,17 @@
+COND=mindset_ref_wrong
+SERVED_REFS=['intractable:A. Direction Selection — choose a win-wi', 'intractable:B. Instrumental Belief — hold beliefs as', 'intractable:D. Standing Posture — you need no permis', 'subdomain:A']
+
+[THINKING]
+Okay, let's try to figure out this lily pad problem. So, the question is about a patch of lily pads that doubles in size every day. If the entire lake is covered in 48 days, how long does it take to cover half the lake?
+
+Hmm. Let me think. If the patch doubles each day, then the day before it's fully covered, it must have been half the size. Because doubling the half would make it full. So, if day 48 is full, then day 47 must be half. Therefore, the answer is 47 days. That makes sense, right?
+
+Wait, but let me make sure I'm not missing anything. The problem says the patch doubles in size every day. So each day, whatever the size is, it becomes twice as much. If the lake is completely covered on day 48, then the day before, on day 47, the coverage would be half of the lake. Because doubling that half on day 48 would result in full coverage. So yes, the time to cover half the lake is 47 days. 
+
+I don't think there's any trick here. It's a classic exponential growth problem. The key is understanding that the doubling means the previous day's size is half of the current. So the answer should be 48 minus 1, which is 47. 
+
+Answer: 47
+
+
+[RESPONSE]
+Answer: 47

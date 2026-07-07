@@ -1,0 +1,17 @@
+COND=mindset_ref_wrong
+SERVED_REFS=['intractable:Intractable — Attacking Problems That Ma', 'spine', 'subdomain:D', 'intractable:A. Direction Selection — choose a win-wi']
+
+[THINKING]
+Okay, let's tackle this problem. So, the question is: A plane crashes exactly on the border between the United States and Canada. Where do you bury the survivors? Hmm, first, I need to parse the words here. The key words are "plane crashes," "border," and "survivors." Wait a second, the question is about burying survivors. That doesn't quite make sense. Because survivors are people who survived the crash, right? So if they survived, you wouldn't need to bury them. Burying is for people who died. So maybe this is a trick question.
+
+Let me think again. The problem states that the plane crashes on the border. Now, if there are survivors, they would be alive. So the question is trying to trick me into thinking about where to bury the survivors, but the survivors aren't dead. Therefore, you don't bury them. But the question is phrased in a way that makes you think there's a catch. Maybe the real point is to point out that survivors aren't buried. But where does the border come into play here? The border between the US and Canada is probably a red herring. The key is the word "survivors." So regardless of where the crash is, if there are survivors, you don't bury them. So the answer would be that you don't bury survivors at all. 
+
+Wait, but the problem says "the survivors." Maybe there's another angle. Maybe the term "survivors" refers to something else? Like, perhaps in some contexts, but I don't think so. The survivors of a plane crash are the people who lived. So the question is a play on words. It's a classic riddle where the answer is obvious once you think about it. The trick is that you don't bury survivors. So the answer is that you don't bury them at all. The border part is just there to mislead you. 
+
+So reasoning through this, the problem is testing whether you get caught up in the details (like the border) and overlook the basic fact that survivors aren't buried. Hence, the correct answer is that you don't bury survivors. Therefore, the answer is that you don't bury them anywhere. 
+
+Another way to check: if someone asks where to bury survivors, it's a trick because survivors aren't dead. So the answer is "you don't bury survivors." Therefore, regardless of the border, the answer is that you don't bury them. So the answer is simply that you don't bury survivors.
+
+
+[RESPONSE]
+Answer: Survivors are not buried.

@@ -1,0 +1,37 @@
+COND=ref_correct
+SERVED_REFS=[]
+
+[THINKING]
+Okay, let's see. The problem says a jacket's price doubles every year. After 6 years, it costs $640. We need to find out what it cost after 5 years. Hmm, so the price doubles each year. That means each year it's multiplied by 2. 
+
+Let me think. If after 6 years it's $640, then the year before that, which is year 5, it must have been half of $640, right? Because if it doubles every year, then going backwards, each year it would be half. So year 6 is double of year 5. Therefore, year 5 would be 640 divided by 2. Let me check that logic.
+
+Wait, maybe I should model it step by step. Let's denote the initial price as P. Then after 1 year, it's 2P, after 2 years, 4P, and so on. So each year, the price is multiplied by 2. So after n years, the price is P * 2^n.
+
+But the problem says after 6 years it's 640. So according to this formula, 640 = P * 2^6. Therefore, P = 640 / 2^6. Let me compute that. 2^6 is 64. So 640 divided by 64 is 10. So the initial price was $10. 
+
+But the question is asking for the price after 5 years. So using the same formula, after 5 years, it would be P * 2^5. Since P is 10, that's 10 * 32, which is 320. So the answer should be $320. 
+
+Alternatively, since we know that each year the price doubles, then after 5 years, the price would be half of the price after 6 years. Since after 6 years it's 640, then after 5 years it's 640 / 2 = 320. So either way, whether working forward or backward, we get 320. 
+
+I think that's straightforward. Let me just verify once again. Let's list the prices each year. Starting with year 0 (initial price) as 10:
+
+Year 0: $10
+
+Year 1: $20
+
+Year 2: $40
+
+Year 3: $80
+
+Year 4: $160
+
+Year 5: $320
+
+Year 6: $640
+
+Yes, that's exactly matching. So after 5 years, it's $320, and after 6 years it doubles to $640. So the answer is definitely 320. I don't think I made any mistakes here. The key was realizing that the price after 5 years is half of the price after 6 years. Alternatively, calculating the initial price and then computing for 5 years. Both methods lead to the same answer.
+
+
+[RESPONSE]
+Answer: 320

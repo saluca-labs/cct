@@ -1,0 +1,9 @@
+COND=ref_correct
+SERVED_REFS=[]
+
+[THINKING]
+Okay, let's see. The question is about a plane crash that happens exactly on the border between the United States and Canada. The question asks where to bury the survivors. Hmm. First, I need to think about the key words here. The problem mentions "survivors." Wait a second, if there are survivors of a plane crash, that means they survived the crash, right? So if someone survived, they wouldn't need to be buried because they're still alive. Oh! I think this is a trick question. The answer might be that you don't bury survivors because they're not dead. Let me check the details again. The plane crashes on the border, but the actual question is about where to bury the survivors. The key here is the word "survivors." If they survived, they are alive, so you don't bury them. The answer is probably a play on words, making you think about the border issue but then realizing that survivors aren't buried. Let me confirm that. If there's a plane crash, the survivors are those who lived through it. So the correct answer is that you don't bury them because they're alive. The answer is "Nowhere" because you don't bury survivors.
+
+
+[RESPONSE]
+Answer: Nowhere

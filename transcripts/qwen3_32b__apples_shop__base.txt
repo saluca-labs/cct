@@ -1,0 +1,15 @@
+COND=base
+SERVED_REFS=[]
+
+[THINKING]
+Okay, let's see. The store started with 48 apples. They sold three quarters of them. Hmm, so first I need to figure out how many apples that three quarters is. Three quarters of 48... right, so a quarter of 48 is 12, because 48 divided by 4 is 12. So three quarters would be 12 multiplied by 3, which is 36. So they sold 36 apples. 
+
+Now, if they had 48 and sold 36, how many are left? Let me subtract. 48 minus 36 equals 12. So after selling, they have 12 apples left. Then, the problem says they received 12 more. So I need to add 12 to the remaining 12. That would be 12 plus 12, which is 24. 
+
+Wait, let me check that again. Starting with 48, selling three quarters. Another way to think about it: if they sold three quarters, then they have one quarter left. Since a quarter of 48 is 12, that's the same as before. Then adding 12 more apples. So 12 plus 12 is 24. Yeah, that seems right. 
+
+I don't think I made any mistakes here. The steps are straightforward: calculate the number sold, subtract from the original amount, then add the new stock. Yep, 24 should be the answer.
+
+
+[RESPONSE]
+Answer: 24

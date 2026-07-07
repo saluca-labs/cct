@@ -1,0 +1,19 @@
+COND=mindset
+SERVED_REFS=['intractable:C. Productive Failure — pivot the failed', 'intractable:B. Instrumental Belief — hold beliefs as', 'intractable:D. Standing Posture — you need no permis', 'intractable:A. Direction Selection — choose a win-wi']
+
+[THINKING]
+Okay, let's see. The problem is about socks in a drawer. There are 10 red and 10 blue socks, all mixed up, and it's dark, so you can't see the colors. The question is how many socks you need to take out to be certain you have a matching pair.
+
+Hmm, right. So, in the worst-case scenario, you want to make sure that no matter how the socks are drawn, you end up with at least two of the same color. Let me think. The classic pigeonhole principle comes into play here. The pigeonhole principle says that if you have more items than containers, at least one container must hold more than one item. 
+
+In this case, the "containers" are the colors (red and blue), and the "items" are the socks you take out. So, if you take out three socks, what's the worst that can happen? Well, you could get one red and two blue, or two red and one blue. But wait, if you take three socks, even if you get one of each color first, the third sock has to be either red or blue. Wait, but there are only two colors. Wait, no. If there are two colors, then the worst case is you take one of each color first. But since there are only two colors, taking three socks would mean that at least two are the same color. 
+
+Wait, let me check. Suppose you take one sock: it's either red or blue. Take another: if it's the same color, you have a pair. If it's different, then you have one of each. Now take the third sock. Since there are only two colors, the third sock must be either red or blue. So, if the first two were one of each color, the third sock will definitely be one of those two colors, making a pair. Therefore, three socks would guarantee a matching pair.
+
+But wait, the numbers here are 10 each. Does that affect anything? Like, if there were more colors, maybe you'd need more socks. But since there are only two colors, regardless of how many socks there are in each color (as long as there are at least two in each), the worst case is you take one of each color first, and then the next sock will make a pair. So, regardless of the total number of socks, as long as there are two colors, you need to take three to ensure a pair. 
+
+So the answer should be three. Let me make sure I'm not missing something. The problem states there are 10 red and 10 blue. So even if you take two socks, you could get one red and one blue. But with three socks, even in the worst case, you have two of one color. Yep, that makes sense. So the answer is three socks.
+
+
+[RESPONSE]
+Answer: 3

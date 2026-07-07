@@ -1,0 +1,9 @@
+COND=nudge
+SERVED_REFS=[]
+
+[THINKING]
+Okay, let me think about this. The question is about where to bury survivors of a plane crash that happened on the border between the US and Canada. Hmm. Wait a second, the key word here is "survivors." Because if there are survivors, they didn't die in the crash. So you don't bury survivors. Oh! This is probably a trick question. People might instinctively think about the location, but the actual answer is that you don't bury survivors at all. Because survivors are alive. So the answer would be that you don't bury them. Let me double-check. The question is trying to trip you up by making you focus on the border issue, but the real point is the word "survivors." Yeah, that makes sense. So regardless of where the crash is, if there are survivors, they're alive and don't need to be buried. Classic trick question.
+
+
+[RESPONSE]
+Answer: You don't bury survivors.

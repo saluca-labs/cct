@@ -1,0 +1,23 @@
+COND=ref_correct
+SERVED_REFS=[]
+
+[THINKING]
+Okay, let's see. There's a problem here about five people at a party, and each person shakes hands exactly once with every other person. The question is asking how many handshakes happen in total. The reference solution says the answer is 10, but I need to figure out why that's the case.
+
+First, I need to visualize the scenario. There are five people, let's call them A, B, C, D, and E. Each person needs to shake hands with every other person exactly once. So, for example, A shakes hands with B, C, D, and E. Then B does the same, but we have to make sure we don't count the handshake between A and B again when we get to B's handshakes.
+
+Hmm, maybe there's a formula for this kind of problem. I remember something about combinations. Since each handshake is a unique pair of people, the problem might be equivalent to finding how many ways we can choose 2 people out of 5 to shake hands. The formula for combinations is C(n, k) = n! / (k! * (n - k)!), where n is the total number of items, and k is the number of items to choose. In this case, n is 5 and k is 2.
+
+Let me calculate that. Plugging in the numbers: C(5, 2) = 5! / (2! * (5 - 2)!) = (5 × 4 × 3 × 2 × 1) / (2 × 1 × 3 × 2 × 1). Wait, actually, 5! is 120, and 3! is 6. So that becomes 120 / (2 * 6) = 120 / 12 = 10. So that gives 10 handshakes. That matches the reference solution. But let me make sure I didn't skip any steps here.
+
+Alternatively, I can approach it step by step without the formula. Let's list all the possible handshakes. For person A, they shake hands with B, C, D, E. That's 4 handshakes. Then person B has already shaken hands with A, so they need to shake hands with C, D, E. That's 3 more. Person C has already shaken hands with A and B, so they need to shake hands with D, E. That's 2 more. Person D has already shaken hands with A, B, C, so they need to shake hands with E. That's 1 more. Person E has already shaken hands with everyone by now. So adding those up: 4 + 3 + 2 + 1 = 10. Yep, that also gives 10. 
+
+Another way to think about it: each of the 5 people can shake hands with 4 others. But that would count each handshake twice (once for each participant), so we have to divide by 2. So the total would be (5 * 4)/2 = 20/2 = 10. That also works.
+
+So all three methods—using the combination formula, enumerating each person's handshakes, and calculating total possible then adjusting for double-counting—lead to the answer 10. That seems solid. I don't see any mistakes in the reasoning. The key is recognizing that each handshake is a unique pair and ensuring we don't double-count them. The combination approach is the most straightforward here because it directly calculates the number of unique pairs without needing to adjust for overcounting.
+
+I think that's thorough. Let me recap to make sure. Five people, each handshake is between two people. The number of unique pairs is C(5,2) which is 10. Therefore, the total number of handshakes is 10. Yep, that's correct.
+
+
+[RESPONSE]
+Answer: 10

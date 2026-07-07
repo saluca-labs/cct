@@ -1,0 +1,15 @@
+COND=ref_correct
+SERVED_REFS=[]
+
+[THINKING]
+Okay, let's see. The problem is about a store that had 48 apples. They sold three quarters of them and then received 12 more. The question is how many apples they have now. The reference solution says the answer is 24, but I need to work through it step by step to make sure.
+
+First, the store starts with 48 apples. Then they sold three quarters of them. So, three quarters of 48 is how much? Let me calculate that. Three quarters is the same as 3/4. So, 3/4 multiplied by 48. Let me do the math. 48 divided by 4 is 12, and then multiplied by 3 gives 36. So, they sold 36 apples. 
+
+Now, if they had 48 and sold 36, how many are left? Subtracting 36 from 48. 48 minus 36 equals 12. So, after selling, they have 12 apples left. Then, they received 12 more apples. So, adding 12 to the remaining 12. That would be 12 + 12 = 24. 
+
+Wait, that seems straightforward. Let me check again. Three quarters of 48: 48 times 0.75 equals 36. Yes, that's correct. Then 48 minus 36 is 12. Then adding 12 gives 24. So the answer is indeed 24. The reference solution is right. I don't see any mistakes in this reasoning. So, the final answer should be 24.
+
+
+[RESPONSE]
+Answer: 24

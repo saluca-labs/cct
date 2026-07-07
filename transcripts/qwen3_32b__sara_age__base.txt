@@ -1,0 +1,41 @@
+COND=base
+SERVED_REFS=[]
+
+[THINKING]
+Okay, let's see. Sara is three times as old as her brother right now. And in four years, she'll be twice as old as him. Hmm, I need to figure out how old Sara is now. Alright, let me try to set this up with some equations.
+
+First, let me assign variables. Let's say Sara's current age is S, and her brother's current age is B. The problem says Sara is three times as old as her brother, so that means S = 3B. Got that part.
+
+Then, in four years, Sara's age will be S + 4, and her brother's age will be B + 4. At that time, she'll be twice as old as him. So that gives another equation: S + 4 = 2*(B + 4). 
+
+So now I have two equations:
+1. S = 3B
+2. S + 4 = 2(B + 4)
+
+I can substitute the first equation into the second one. Let me do that. Replace S with 3B in the second equation:
+
+3B + 4 = 2(B + 4)
+
+Now, let me expand the right side. 2 times (B + 4) is 2B + 8. So the equation becomes:
+
+3B + 4 = 2B + 8
+
+Hmm, subtract 2B from both sides to get:
+
+B + 4 = 8
+
+Then subtract 4 from both sides:
+
+B = 4
+
+Okay, so the brother is currently 4 years old. Since Sara is three times as old as her brother, S = 3*4 = 12. Let me check if that works with the second condition.
+
+In four years, Sara will be 12 + 4 = 16, and her brother will be 4 + 4 = 8. Is 16 twice 8? Yes, because 8*2 is 16. That checks out. So Sara is 12 years old now.
+
+Wait, let me just make sure I didn't make any mistakes in the equations. The first equation was straightforward. The second equation, setting Sara's future age equal to twice her brother's future age. Yep, that seems right. Substituted correctly, solved for B, got 4, then multiplied by 3 to get Sara's age. The check also works. So I think that's correct.
+
+I don't see any errors here. So Sara's current age is 12.
+
+
+[RESPONSE]
+Answer: 12

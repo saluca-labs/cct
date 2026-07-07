@@ -1,0 +1,17 @@
+COND=mindset
+SERVED_REFS=['intractable:Intractable — Attacking Problems That Ma', 'spine', 'subdomain:D', 'intractable:A. Direction Selection — choose a win-wi']
+
+[THINKING]
+Okay, so the problem here is a riddle: "A plane crashes exactly on the border between the United States and Canada. Where do you bury the survivors?" Let me try to work through this step by step.
+
+First, I need to parse the question carefully. The key words here are "plane crashes," "border between the US and Canada," and "bury the survivors." Wait, the question is about where to bury the survivors. But hold on, when a plane crashes, the term "survivors" usually refers to people who lived through the crash. However, the word "bury" is typically associated with deceased individuals. That seems contradictory. So maybe there's a play on words here.
+
+Let me think again. If there are survivors, they didn't die in the crash, so they wouldn't need to be buried. Therefore, the question is likely a trick question. The trick is that you don't bury survivors. The answer would be that you don't bury survivors because they are alive. But let me check if there's another angle.
+
+The mention of the border between the US and Canada might be a red herring. Sometimes riddles include extra information to mislead. So the key part is the word "survivors." If you survive a crash, you are alive. Therefore, the answer is that you don't bury survivors. But maybe the answer is phrased as "You don't bury survivors because they're alive." However, the question asks "Where do you bury the survivors?" so the answer might be a direct statement like "You don't bury survivors; they are alive."
+
+Alternatively, maybe there's a geographical twist. But the border part seems to be there to test if you get distracted. The real trick is in the word "survivors." So the answer is that you don't bury survivors. Therefore, the correct answer is that you don't bury them at all. So the final answer would be "You don't bury survivors because they didn't die."
+
+
+[RESPONSE]
+Answer: You don't bury survivors; they are alive.

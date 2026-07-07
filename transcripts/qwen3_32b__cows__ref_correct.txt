@@ -1,0 +1,11 @@
+COND=ref_correct
+SERVED_REFS=[]
+
+[THINKING]
+Okay, let's see. The problem says a farmer has 15 cows. All but 6 run away. How many remain?
+
+Hmm. So, "all but 6" means that out of the total number of cows, which is 15, all of them except for 6 run away. Wait, so if all but 6 run away, then the ones that remain are the 6. Because "all but 6" implies that the ones that didn't run away are the 6. Let me think again. If I have 15 cows and all but 6 run away, that means 15 minus the ones that ran away equals 6. Wait, no. The wording is tricky. "All but 6" run away. So "all" except for 6. So the 6 are the ones that didn't run away. Therefore, the number of cows remaining is 6. Let me check. If all but 6 run away, then 15 total minus the ones that ran away equals 6. So, the ones that ran away would be 15 - 6 = 9. So 9 ran away, 6 left. So the answer is 6. Yeah, that makes sense. The key is parsing the phrase "all but 6 run away," which means that 6 are left. So the answer should be 6.
+
+
+[RESPONSE]
+Answer: 6

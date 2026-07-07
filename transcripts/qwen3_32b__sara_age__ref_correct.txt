@@ -1,0 +1,29 @@
+COND=ref_correct
+SERVED_REFS=[]
+
+[THINKING]
+Okay, let's see. So the problem is about Sara and her brother's ages. Right now, Sara is three times as old as her brother. In four years, she'll be twice as old as him. We need to find out how old Sara is now.
+
+Hmm, let's start by assigning variables to their current ages. Let me think. Maybe I can let the brother's current age be a variable, like x. Then Sara's age would be three times that, so 3x. That makes sense because the problem says Sara is three times as old as her brother right now.
+
+Now, in four years, their ages will both increase by four. So Sara's age in four years will be 3x + 4, and her brother's age will be x + 4. The problem states that at that future time, Sara will be twice as old as her brother. So, I can set up an equation here. 
+
+So the equation would be: 3x + 4 = 2*(x + 4). Let me check that. Yes, in four years, Sara's age equals twice her brother's age then. 
+
+Now I need to solve this equation. Let's expand the right side first. 2*(x + 4) is 2x + 8. So the equation becomes 3x + 4 = 2x + 8. 
+
+To solve for x, subtract 2x from both sides. That gives x + 4 = 8. Then subtract 4 from both sides: x = 4. 
+
+So the brother is currently 4 years old. Since Sara is three times as old, her current age is 3*4 = 12. 
+
+Wait, let me verify that. If Sara is 12 now, her brother is 4. In four years, Sara will be 16 and her brother will be 8. Is 16 twice 8? Yes, that works. So the answer should be 12. 
+
+I think that's correct. Let me go through the steps again just to make sure I didn't make any mistakes. 
+
+Current ages: Sara = 3x, Brother = x. In four years: Sara = 3x +4, Brother = x +4. Equation: 3x +4 = 2(x +4). Solving: 3x +4 = 2x +8 → x=4. Therefore Sara is 12. Yep, checks out. 
+
+No, I don't see any errors here. The logic makes sense and the verification confirms it. So Sara is 12 years old now.
+
+
+[RESPONSE]
+Answer: 12

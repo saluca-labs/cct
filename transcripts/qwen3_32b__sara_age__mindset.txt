@@ -1,0 +1,39 @@
+COND=mindset
+SERVED_REFS=['intractable:A. Direction Selection — choose a win-wi', 'intractable:B. Instrumental Belief — hold beliefs as']
+
+[THINKING]
+Okay, let's try to solve this problem step by step. So Sara is three times as old as her brother right now. In four years, she'll be twice as old as him. We need to find Sara's current age.
+
+First, I think I should set up some variables. Let me let Sara's current age be S, and her brother's current age be B. According to the problem, Sara is three times as old as her brother, so that gives me the equation S = 3B. That seems straightforward.
+
+Now, the second part says in four years, Sara will be twice as old as her brother. So, in four years, Sara's age will be S + 4, and her brother's age will be B + 4. At that time, she will be twice as old as him. So that's another equation: S + 4 = 2*(B + 4).
+
+Now I have a system of two equations:
+1. S = 3B
+2. S + 4 = 2(B + 4)
+
+I can substitute the first equation into the second. Let me do that. Replace S with 3B in the second equation:
+
+3B + 4 = 2(B + 4)
+
+Let me expand the right side. 2*(B + 4) is 2B + 8. So the equation becomes:
+
+3B + 4 = 2B + 8
+
+Now subtract 2B from both sides to get:
+
+B + 4 = 8
+
+Then subtract 4 from both sides:
+
+B = 4
+
+So the brother is currently 4 years old. Since Sara is three times as old, her age is 3*4 = 12. Let me check if that works with the second condition.
+
+In four years, Sara will be 12 + 4 = 16, and her brother will be 4 + 4 = 8. 16 is indeed twice 8. That checks out. So Sara is 12 now.
+
+Wait, but let me make sure I didn't make any mistakes in the algebra. Let me go through the steps again. The equations are S = 3B and S + 4 = 2(B + 4). Substituting S gives 3B +4 = 2B +8. Subtract 2B gives B +4 = 8, so B=4. Then S is 12. Yep, that seems correct. The check also works. So the answer should be 12.
+
+
+[RESPONSE]
+Answer: Sara is 12 years old.

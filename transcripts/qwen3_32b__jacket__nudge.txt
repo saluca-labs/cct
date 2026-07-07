@@ -1,0 +1,25 @@
+COND=nudge
+SERVED_REFS=[]
+
+[THINKING]
+Okay, let's see. The problem says that a jacket's price doubles every year. After 6 years, it costs $640. The question is asking what it cost after 5 years. Hmm. Alright, let me think step by step.
+
+First, the key here is that the price doubles each year. So if I can find the price each year, working backwards might help. Since after 6 years it's $640, maybe I can figure out what it was the year before, which would be year 5. Because if it doubles every year, then the price in year 6 is twice the price in year 5. So if I take the price at year 6 and divide by 2, that should give me the price at year 5. Let me check that logic.
+
+Let me denote the initial price (year 0) as P. Then each year, the price doubles. So:
+
+Year 1: 2P
+
+Year 2: 2*(2P) = 4P
+
+Year 3: 2*(4P) = 8P
+
+Continuing this pattern, each year the multiplier is 2^n where n is the number of years. So after 6 years, the price is P*(2^6) = 64P. According to the problem, that equals $640. So 64P = 640. Solving for P, we divide both sides by 64: P = 640 / 64 = 10. So the original price was $10.
+
+Now, the question is asking for the price after 5 years. Using the same formula, the price after 5 years would be P*(2^5) = 10*32 = 320. So $320. Alternatively, since we know that each year it doubles, the price after 5 years is half of the price after 6 years. Since 640 divided by 2 is 320, that's another way to get there. Both methods give the same answer, so that seems consistent.
+
+Wait, but let me make sure there's no trick here. The problem says "after 6 years" and "after 5 years". So does "after 1 year" mean the price at the end of the first year? Assuming that the doubling happens once per year, so the initial price is at time 0, then after 1 year it's doubled, etc. So yes, the calculation seems right. If after 6 years it's 640, then each prior year's price is half of the next year's. So year 5 is 640 / 2 = 320. That's straightforward. So the answer should be 320. Let me just verify with the initial calculation again. Original price is $10. After 1 year: 20, 2:40, 3:80, 4:160, 5:320, 6:640. Yep, that matches. So after 5 years, it's $320. So the answer is 320.
+
+
+[RESPONSE]
+Answer: 320

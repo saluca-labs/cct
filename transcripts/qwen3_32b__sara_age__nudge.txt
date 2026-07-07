@@ -1,0 +1,31 @@
+COND=nudge
+SERVED_REFS=[]
+
+[THINKING]
+Okay, let's see. So the problem is about Sara and her brother's ages. Right now, Sara is three times as old as her brother. In four years, she'll be twice as old as him. I need to find out how old Sara is now.
+
+Hmm. Let me start by setting up variables. Let me call Sara's current age S, and her brother's current age B. The problem says Sara is three times as old as her brother, so that means S = 3B. That's straightforward.
+
+Then, in four years, Sara's age will be S + 4, and her brother's age will be B + 4. At that time, Sara will be twice as old as her brother. So that gives another equation: S + 4 = 2*(B + 4).
+
+Now I have two equations:
+1. S = 3B
+2. S + 4 = 2(B + 4)
+
+I can substitute the first equation into the second. Let's do that. Replace S in the second equation with 3B.
+
+So 3B + 4 = 2*(B + 4). Let's expand the right side. 2*(B + 4) is 2B + 8. So the equation becomes 3B + 4 = 2B + 8.
+
+Now, subtract 2B from both sides to get B + 4 = 8. Then subtract 4 from both sides to get B = 4. So the brother is currently 4 years old.
+
+Since Sara is three times as old as her brother, her age is 3*4 = 12. Let me check if that works with the second condition.
+
+In four years, Sara will be 12 + 4 = 16, and her brother will be 4 + 4 = 8. Is 16 twice 8? Yes, because 8*2 = 16. That checks out.
+
+Wait, but let me make sure I didn't make any mistakes in the equations. Let me go through the steps again. Starting with S = 3B and S + 4 = 2(B + 4). Substitute S with 3B gives 3B +4 = 2B +8. Subtract 2B: B +4 =8. Subtract 4: B=4. So S=12. Yes, that seems correct. The answer should be 12.
+
+But wait, maybe I missed something? Let me think. Let's test another way. Suppose the brother is 4 now, Sara is 12. In four years, brother is 8, Sara is 16. 16 is twice 8. Yep. All right, that seems to work. So Sara is 12 now. I think that's the correct answer.
+
+
+[RESPONSE]
+Answer: 12

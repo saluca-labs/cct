@@ -1,0 +1,19 @@
+COND=base
+SERVED_REFS=[]
+
+[THINKING]
+Okay, let's see. So the problem is that a bottle and a cork together cost $2.20. And the bottle costs $2.00 more than the cork. I need to find out how much the cork costs. Hmm, let me think.
+
+First, maybe I should set up some variables. Let me call the cost of the cork something, like maybe "c". Then the bottle would be the cork's cost plus $2.00. So the bottle is c + 2.00. And together, they add up to $2.20. So, the equation would be cork plus bottle equals 2.20. Which would be c + (c + 2.00) = 2.20. Let me write that down:
+
+c + (c + 2.00) = 2.20
+
+Simplifying that, combining like terms. So that's 2c + 2.00 = 2.20. Then subtract 2.00 from both sides to get 2c = 0.20. Then divide both sides by 2, so c = 0.10. So the cork costs $0.10? Wait, let me check that again.
+
+If the cork is $0.10, then the bottle is $0.10 + $2.00 = $2.10. Then adding them together, $0.10 + $2.10 = $2.20. Yeah, that adds up. But wait, intuitively, if the total is $2.20 and the bottle is $2 more, maybe people might think the cork is $1 and the bottle is $2, but that adds to $3. So no, that's not right. So maybe my calculation is correct here.
+
+Wait, let me try another way. Let me use algebra again to verify. Let me define variables again. Let me let the cork be x dollars. Then the bottle is x + 2. Total cost is x + (x + 2) = 2.20. So 2x + 2 = 2.20. Subtract 2: 2x = 0.20. So x = 0.10. Yep, same answer. So the cork is 10 cents. That seems low, but the math checks out. So maybe that's the correct answer. Let me just make sure there's no trick here. Sometimes these problems are tricky. For example, if someone misreads and thinks the bottle is twice as much as the cork or something else. But here it says the bottle costs $2.00 more than the cork. So if the cork is 10 cents, the bottle is 2.10, which is exactly $2.00 more than 0.10. So 2.10 - 0.10 is 2.00. Yep, that's correct. So the answer is 10 cents. I think that's right.
+
+
+[RESPONSE]
+Answer: 0.10

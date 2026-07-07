@@ -1,0 +1,15 @@
+COND=base
+SERVED_REFS=[]
+
+[THINKING]
+Okay, let's see. There's this lake with a lily pad patch. The patch doubles in size every day. And it takes 48 days to cover the entire lake. The question is asking how long it would take to cover half the lake.
+
+Hmm, so if the patch doubles every day, then the day before it covers the whole lake, it must have been half the size. Because if it doubles each day, then on day 48 it's full, so day 47 would be half. Wait, is that right? Let me think again.
+
+Let me break it down. Suppose on day 1, the patch is some size. Each day it doubles. So, on day 2, it's twice the size of day 1. Day 3, twice day 2, and so on. So, if the entire lake is covered on day 48, then the day before that, day 47, the patch must have been half the lake's area. Because when it doubles on day 48, it goes from half to full. That makes sense. So, the time to cover half the lake is one day less than the time to cover the whole lake. Therefore, 48 days minus 1 day equals 47 days. 
+
+Wait, but maybe I'm missing something. Let me test with a smaller number. Let's say the lake is covered in 2 days. Then on day 1, it's half the lake, and day 2 it doubles to cover the whole lake. So yes, the time to cover half is day 1, which is 2-1=1 day. That works. Another example: if it takes 3 days to cover the lake, then day 2 would be half, and day 3 doubles to full. So, half on day 2, which is 3-1=2. So the formula seems to hold. Therefore, in the original problem, 48 days to cover the whole lake implies half on day 47. So the answer should be 47 days.
+
+
+[RESPONSE]
+Answer: 47
