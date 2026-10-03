@@ -1,6 +1,6 @@
 r"""deliberation_probe.py — δ_ref-vs-δ_IT context probe (public reproduction harness).
 
-Reproduces the powered probe from "Curated Context, Not Weight Surgery" (Saluca Labs, 2026).
+Reproduces the probe from "Curated Context, Not Weight Surgery" (Saluca Labs, 2026).
 Six conditions per task (24 reasoning-trap tasks in tasks.json):
   base                no context (control)
   nudge               generic deliberation nudge, NO mindset content (isolates "the mindset"
