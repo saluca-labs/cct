@@ -6,7 +6,7 @@ This product includes software developed at Saluca Labs, licensed under the Apac
 under CC-BY-4.0.
 
 TKHR (Topic-Keyed Hash Routing), the method that selected the mindset passages served in the paper
-run, is separately PATENTED by Saluca Labs and is NOT licensed by this repository. This repository
+run, is separately PATENT PENDING (Saluca Labs) and is NOT licensed by this repository. This repository
 does not include or reimplement the TKHR router; it pins the exact passages that were served so the
 experiment is reproducible without it. An open-source reference implementation of TKHR is available
 separately at https://github.com/saluca-labs/tartarus-mcp under its own license.

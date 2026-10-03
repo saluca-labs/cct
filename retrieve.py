@@ -1,7 +1,7 @@
 """retrieve.py — self-contained, deterministic mindset retrieval for the CCT probe.
 
 The paper run served each task a small set of *method* passages from the `intractable`
-mindset, selected by TKHR (Topic-Keyed Hash Routing). TKHR is patented; its open-source
+mindset, selected by TKHR (Topic-Keyed Hash Routing). TKHR is patent pending; its open-source
 reference implementation lives at https://github.com/saluca-labs/tartarus-mcp . This repo does
 NOT reimplement the router. Instead it PINS the exact passages that were served in the released
 run (data/served_refs.json), so the experiment reproduces byte-for-byte with no dependency on any
