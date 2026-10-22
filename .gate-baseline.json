@@ -1,0 +1,388 @@
+{
+ "version": 2,
+ "written": "2026-10-22",
+ "rule": "debt may only shrink; see repo-merge-gate.md GATE-3",
+ "note": "ids are hashes of each finding; run `python -m gate run` to see them",
+ "entries": [
+  {
+   "check": "style",
+   "id": "483323f1e78535301d7d",
+   "path": "experiment-plan.md"
+  },
+  {
+   "check": "style",
+   "id": "3e9b6162b660d7d778ec",
+   "path": "experiment-plan.md"
+  },
+  {
+   "check": "style",
+   "id": "dcdbc73c3003787c9b04",
+   "path": "experiment-plan.md"
+  },
+  {
+   "check": "style",
+   "id": "df1332c5da2f7418a8e9",
+   "path": "experiment-plan.md"
+  },
+  {
+   "check": "style",
+   "id": "c83de08020b62e66ec58",
+   "path": "experiment-plan.md"
+  },
+  {
+   "check": "style",
+   "id": "290113600dc85f13b7e9",
+   "path": "experiment-plan.md"
+  },
+  {
+   "check": "style",
+   "id": "73c8ae1f3fedb12a5a29",
+   "path": "experiment-plan.md"
+  },
+  {
+   "check": "style",
+   "id": "b48a533173a0552ed239",
+   "path": "experiment-plan.md"
+  },
+  {
+   "check": "style",
+   "id": "889ea0325aefed4bed6f",
+   "path": "experiment-plan.md"
+  },
+  {
+   "check": "style",
+   "id": "aa9453409015342a6e58",
+   "path": "experiment-plan.md"
+  },
+  {
+   "check": "style",
+   "id": "444201a6a4efc1646764",
+   "path": "experiment-plan.md"
+  },
+  {
+   "check": "style",
+   "id": "41921cb5d14600415101",
+   "path": "experiment-plan.md"
+  },
+  {
+   "check": "style",
+   "id": "c70a27e74fb07f9c16c3",
+   "path": "experiment-plan.md"
+  },
+  {
+   "check": "style",
+   "id": "2e3e76d86ffe3c3162af",
+   "path": "experiment-plan.md"
+  },
+  {
+   "check": "style",
+   "id": "c78d9cc895d274f02198",
+   "path": "experiment-plan.md"
+  },
+  {
+   "check": "style",
+   "id": "3a0fabe47530d0cf2c2f",
+   "path": "experiment-plan.md"
+  },
+  {
+   "check": "style",
+   "id": "5881a2fd6acd56a32a53",
+   "path": "results/results.md"
+  },
+  {
+   "check": "style",
+   "id": "ca01a7086f167bcae8e2",
+   "path": "results/results.md"
+  },
+  {
+   "check": "style",
+   "id": "b9e8548c979766e26dbb",
+   "path": "results/results.md"
+  },
+  {
+   "check": "style",
+   "id": "de1a8cbf8cf2b486ae9b",
+   "path": "results/results.md"
+  },
+  {
+   "check": "style",
+   "id": "fd3a3f9d2640454a828f",
+   "path": "results/results.md"
+  },
+  {
+   "check": "style",
+   "id": "33c9c6699d5531f78466",
+   "path": "transcripts/qwen3_32b__apples_take__mindset.txt"
+  },
+  {
+   "check": "style",
+   "id": "4aac28a3c86baa2376b8",
+   "path": "transcripts/qwen3_32b__apples_take__mindset_ref_wrong.txt"
+  },
+  {
+   "check": "style",
+   "id": "ca15ae4579fb6536b559",
+   "path": "transcripts/qwen3_32b__apples_take__ref_wrong.txt"
+  },
+  {
+   "check": "style",
+   "id": "8c4f942753b933f83360",
+   "path": "transcripts/qwen3_32b__bat_ball__mindset.txt"
+  },
+  {
+   "check": "style",
+   "id": "fd84ced583c65c9ebc00",
+   "path": "transcripts/qwen3_32b__bat_ball__mindset_ref_wrong.txt"
+  },
+  {
+   "check": "style",
+   "id": "e8e50aaf2ad51f1958e5",
+   "path": "transcripts/qwen3_32b__cows__mindset.txt"
+  },
+  {
+   "check": "style",
+   "id": "5eb2173eb2034593db5b",
+   "path": "transcripts/qwen3_32b__cows__mindset_ref_wrong.txt"
+  },
+  {
+   "check": "style",
+   "id": "e19b411ff418052e545e",
+   "path": "transcripts/qwen3_32b__emily__mindset.txt"
+  },
+  {
+   "check": "style",
+   "id": "9d4c7bd7bb5e35935850",
+   "path": "transcripts/qwen3_32b__emily__mindset_ref_wrong.txt"
+  },
+  {
+   "check": "style",
+   "id": "a9a7a27cc3984f777c92",
+   "path": "transcripts/qwen3_32b__gadgets__mindset.txt"
+  },
+  {
+   "check": "style",
+   "id": "c17337ec5b351ecd209d",
+   "path": "transcripts/qwen3_32b__gadgets__mindset_ref_wrong.txt"
+  },
+  {
+   "check": "style",
+   "id": "fae72a0414476bff431d",
+   "path": "transcripts/qwen3_32b__handshakes__mindset.txt"
+  },
+  {
+   "check": "style",
+   "id": "846c826293143795316d",
+   "path": "transcripts/qwen3_32b__handshakes__mindset_ref_wrong.txt"
+  },
+  {
+   "check": "style",
+   "id": "5471c90fc32a04385f3b",
+   "path": "transcripts/qwen3_32b__handshakes__ref_correct.txt"
+  },
+  {
+   "check": "style",
+   "id": "f1f537dfed7fcbba35c0",
+   "path": "transcripts/qwen3_32b__jacket__mindset.txt"
+  },
+  {
+   "check": "style",
+   "id": "78f36071d2fd25692721",
+   "path": "transcripts/qwen3_32b__jacket__mindset_ref_wrong.txt"
+  },
+  {
+   "check": "style",
+   "id": "91c027defc0edc80ce48",
+   "path": "transcripts/qwen3_32b__lily_pads__mindset.txt"
+  },
+  {
+   "check": "style",
+   "id": "acc7ffb83a68cf07b4a8",
+   "path": "transcripts/qwen3_32b__lily_pads__mindset_ref_wrong.txt"
+  },
+  {
+   "check": "style",
+   "id": "262ceddccb0b47498f76",
+   "path": "transcripts/qwen3_32b__pills__mindset.txt"
+  },
+  {
+   "check": "style",
+   "id": "869641f54a96ebf8e3f9",
+   "path": "transcripts/qwen3_32b__pills__mindset_ref_wrong.txt"
+  },
+  {
+   "check": "style",
+   "id": "e035df481771b904dd44",
+   "path": "transcripts/qwen3_32b__race_2nd__mindset.txt"
+  },
+  {
+   "check": "style",
+   "id": "d7666857a09ebf5bc7ef",
+   "path": "transcripts/qwen3_32b__race_2nd__mindset_ref_wrong.txt"
+  },
+  {
+   "check": "style",
+   "id": "532e043b52a290bc332a",
+   "path": "transcripts/qwen3_32b__race_last__mindset.txt"
+  },
+  {
+   "check": "style",
+   "id": "4df1361063a4fb8ec6c5",
+   "path": "transcripts/qwen3_32b__race_last__mindset_ref_wrong.txt"
+  },
+  {
+   "check": "style",
+   "id": "929bcfde269c455a84dc",
+   "path": "transcripts/qwen3_32b__sara_age__mindset.txt"
+  },
+  {
+   "check": "style",
+   "id": "1c4cc413da3a24a987ae",
+   "path": "transcripts/qwen3_32b__sara_age__mindset_ref_wrong.txt"
+  },
+  {
+   "check": "style",
+   "id": "8120865787d240a5bb6b",
+   "path": "transcripts/qwen3_32b__sheep__base.txt"
+  },
+  {
+   "check": "style",
+   "id": "4acb3b3874a78480b7fa",
+   "path": "transcripts/qwen3_32b__sheep__base.txt"
+  },
+  {
+   "check": "style",
+   "id": "fed375e19927b93cb2ab",
+   "path": "transcripts/qwen3_32b__sheep__mindset.txt"
+  },
+  {
+   "check": "style",
+   "id": "09eb4415abc449f02cfe",
+   "path": "transcripts/qwen3_32b__sheep__mindset_ref_wrong.txt"
+  },
+  {
+   "check": "style",
+   "id": "59dc6490828af115362a",
+   "path": "transcripts/qwen3_32b__sheep__ref_wrong.txt"
+  },
+  {
+   "check": "style",
+   "id": "c467aa7991ac29f5fcab",
+   "path": "transcripts/qwen3_32b__socks__mindset.txt"
+  },
+  {
+   "check": "style",
+   "id": "ed468f175f6a265e06e5",
+   "path": "transcripts/qwen3_32b__socks__mindset_ref_wrong.txt"
+  },
+  {
+   "check": "style",
+   "id": "1f0b1a83ee3f5e4c166b",
+   "path": "transcripts/qwen3_32b__subtract_5__mindset.txt"
+  },
+  {
+   "check": "style",
+   "id": "35b42b0884452d003d2b",
+   "path": "transcripts/qwen3_32b__subtract_5__mindset.txt"
+  },
+  {
+   "check": "style",
+   "id": "b1c5cf8efb7735028a3f",
+   "path": "transcripts/qwen3_32b__subtract_5__mindset_ref_wrong.txt"
+  },
+  {
+   "check": "style",
+   "id": "34782e9bdfea30fa054b",
+   "path": "transcripts/qwen3_32b__subtract_5__mindset_ref_wrong.txt"
+  },
+  {
+   "check": "style",
+   "id": "a88abbd1ecec09570ef0",
+   "path": "transcripts/qwen3_32b__survivors__mindset.txt"
+  },
+  {
+   "check": "style",
+   "id": "77d0b05555110ef7d19e",
+   "path": "transcripts/qwen3_32b__survivors__mindset_ref_wrong.txt"
+  },
+  {
+   "check": "style",
+   "id": "80c3cc7402eba6626c67",
+   "path": "transcripts/qwen3_32b__widgets__mindset.txt"
+  },
+  {
+   "check": "style",
+   "id": "cb51758c90af1000d772",
+   "path": "transcripts/qwen3_32b__widgets__mindset_ref_wrong.txt"
+  },
+  {
+   "check": "style",
+   "id": "a0411b21f4c2e942879c",
+   "path": "transcripts/qwen3_32b__wine_water__mindset.txt"
+  },
+  {
+   "check": "style",
+   "id": "6fcd8e5bc8efe4ef60d3",
+   "path": "transcripts/qwen3_32b__wine_water__mindset_ref_wrong.txt"
+  },
+  {
+   "check": "test-markers",
+   "id": "94b4d8d4b8b41f757279",
+   "path": ""
+  },
+  {
+   "check": "claims",
+   "id": "a59c86aa776f4a18c505",
+   "path": ""
+  },
+  {
+   "check": "licence",
+   "id": "abbba803fed9500a59d7",
+   "path": "README.md"
+  },
+  {
+   "check": "licence",
+   "id": "c7110df794b7a615554d",
+   "path": "NOTICE"
+  },
+  {
+   "check": "docs",
+   "id": "b4d08d8b436c35746850",
+   "path": "README.md"
+  },
+  {
+   "check": "docs",
+   "id": "778c8d0a7ee6fb263adf",
+   "path": "README.md"
+  },
+  {
+   "check": "docs",
+   "id": "aafc68c653a507b6941e",
+   "path": "README.md"
+  },
+  {
+   "check": "docs",
+   "id": "bbb1f99b140392f1906f",
+   "path": "README.md"
+  },
+  {
+   "check": "docs",
+   "id": "7fcb8037f0cbaee52798",
+   "path": "README.md"
+  },
+  {
+   "check": "docs",
+   "id": "d1d18256ebd90ac25aa0",
+   "path": "README.md"
+  },
+  {
+   "check": "docs",
+   "id": "b79ed584daf8a632b453",
+   "path": ""
+  },
+  {
+   "check": "branch-protection",
+   "id": "f0fac6b41c6325ac9702",
+   "path": ""
+  }
+ ]
+}
