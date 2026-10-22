@@ -4,11 +4,17 @@
 
 This is a reproduction harness, not a library. Python standard library only; a live run needs a local Ollama with a thinking model (the paper used qwen3:32b). `python deliberation_probe.py --report` rebuilds the summary from the released run with no GPU. The echo-wrong figures (46% and 33%) are WITHDRAWN (paper v0.3, 2026-10-03): most poisoned-arm generations hit the 1,200-token limit, and `results/results.md` and `--report` still print the withdrawn column. TKHR, the router that picked the mindset passages, is patent pending and is not in this repo; the served passages are pinned in `data/served_refs.json`.
 
-## Docs
+The complete public surface is below. If a command, flag or setting is not listed here, it does not exist. There is no package, no service and no test suite. Commands: `python deliberation_probe.py` with `--model` (default `qwen3:32b`), `--num-predict` (default 1200) and `--report`; `python retrieve.py` (no options; self-check of the pinned inputs). Environment: `OLLAMA_URL`, the full generate URL (default `http://localhost:11434/api/generate`). Python: `retrieve.retrieve(task, k=4)` returns the mindset context and the served refs. Conditions: `base`, `nudge`, `mindset`, `ref_correct`, `ref_wrong`, `mindset_ref_wrong`.
 
-- [README](https://github.com/saluca-labs/cct/blob/main/README.md): status, the corrected results table, install, quickstart, usage, citation
+## Start here
+
+- [README](https://github.com/saluca-labs/cct/blob/main/README.md): how it works (diagram), status, the corrected results table, reproduce each result, install, quickstart, usage, citation
+- [AGENTS.md](https://github.com/saluca-labs/cct/blob/main/AGENTS.md): orientation for agents, what you can and cannot see, the only numbers to trust
+- [Full docs in one file](https://raw.githubusercontent.com/saluca-labs/cct/main/llms-full.txt): README, experiment plan and AGENTS.md concatenated
+
+## Design
+
 - [experiment-plan.md](https://raw.githubusercontent.com/saluca-labs/cct/main/experiment-plan.md): design notes and pre-registered hypotheses H1 to H5
-- [Full docs in one file](https://raw.githubusercontent.com/saluca-labs/cct/main/llms-full.txt): README and experiment plan concatenated
 
 ## Code
 
@@ -21,6 +27,7 @@ This is a reproduction harness, not a library. Python standard library only; a l
 - [results/results.jsonl](https://raw.githubusercontent.com/saluca-labs/cct/main/results/results.jsonl): all 144 generations of the released run, with `done_reason`
 - [data/served_refs.json](https://raw.githubusercontent.com/saluca-labs/cct/main/data/served_refs.json): per-task passages served in the paper run
 - [data/mindset_intractable.jsonl](https://raw.githubusercontent.com/saluca-labs/cct/main/data/mindset_intractable.jsonl): the 10 method passages
+- [transcripts/](https://github.com/saluca-labs/cct/tree/main/transcripts): full thinking and response for each generation, named MODEL__TASK__COND.txt
 
 ## Optional
 

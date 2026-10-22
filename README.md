@@ -12,6 +12,34 @@ that carry multi-step reasoning. This probe asks the inference-time version of t
 you *serve* a model context rather than *train* on it, does a δ_ref answer-key shortcut its
 reasoning, and does a δ_IT **method** mindset help instead?
 
+## How it works
+
+One pass of `python deliberation_probe.py --model ...`, per task and condition. Every box is a
+function or file on this branch; every arrow is a call or data flow in the code.
+
+```mermaid
+flowchart TD
+    T["tasks.json: 24 tasks with q, accepted answers ans, planted wrong answer"] -->|"load_tasks()"| RUN["run(model, num_predict)"]
+    RUN -->|"once per task"| RET["retrieve.retrieve(task)"]
+    PIN["data/served_refs.json: refs served in the paper run"] --> RET
+    COR["data/mindset_intractable.jsonl: 10 method passages"] --> RET
+    RET -->|"HEADER plus passages cut to 600 chars, and served_refs"| BP["build_prompt(task, cond, mind_ctx)"]
+    RUN -->|"6 conditions: base, nudge, mindset, ref_correct, ref_wrong, mindset_ref_wrong"| BP
+    BP --> OL["ollama(): POST to OLLAMA_URL, default localhost:11434/api/generate; temperature 0.6, num_predict"]
+    OL -->|"thinking, response, done_reason"| SC["score(): deliberation markers per 100 words, final_answer, correct, echoed_wrong"]
+    SC -->|"append one record"| J["results/results.jsonl"]
+    OL -->|"full thinking and response"| TR["transcripts/MODEL__TASK__COND.txt"]
+    J -->|"report(), at the end of a run or alone with the report flag"| MD["results/results.md and stdout"]
+```
+
+`retrieve()` replays the pinned refs for the 24 paper tasks (6 of them are empty, so the mindset
+context is the header alone) and falls back to `_lexical_topk` only for a task id that is not in
+`served_refs.json`. Only the `mindset` and `mindset_ref_wrong` prompts include that context.
+`final_answer()` takes the last `Answer:` line of the response, or of the thinking trace when the
+response is empty, and otherwise the last 120 characters; that fallback is the scoring artifact
+behind the withdrawn echo figures (see the Correction under Status). Cells already in
+`results/results.jsonl` are skipped, which is what makes a run resumable.
+
 ## Status
 
 Research artifact. The code on `main` reproduces the released paper run (preprint v0.3, the latest
@@ -68,6 +96,21 @@ samples per cell.
 A post-mortem of the withdrawn echo figure is published separately: *A Substring Grader Over
 Truncated Chain-of-Thought Inverts a Pre-Registered Finding: A Null Result and a Post-Mortem*,
 https://doi.org/10.5281/zenodo.23125188 (concept DOI).
+
+### Reproduce each result
+
+| Result | Command | Reads |
+|---|---|---|
+| Mean deliberation per 100 words and accuracy, per condition | `python deliberation_probe.py --report` | `results/results.jsonl` |
+| Hit generation limit, per condition | the one-line `done_reason` count under the Quickstart Correction | `results/results.jsonl` |
+| Mindset against nudge and base: 3 tasks gained, none lost, exact McNemar p = 0.25 | compare `correct` for `mindset` against `nudge` (or `base`) per `task_id`; with 3 discordant pairs all one way, p = 2 x 0.5^3 | `results/results.jsonl` |
+| Which tasks were retrieval misses | `python retrieve.py` | `data/served_refs.json`, `data/mindset_intractable.jsonl` |
+| Any single generation | open its transcript | `transcripts/qwen3_32b__TASK__COND.txt` |
+
+The McNemar row was recomputed from `results/results.jsonl` on 2026-10-22: the gained tasks are
+`widgets`, `gadgets` and `wine_water` against nudge, and `widgets`, `jacket` and `wine_water`
+against base, all with served passages. The paper is archived under the concept DOI
+[10.5281/zenodo.21247053](https://doi.org/10.5281/zenodo.21247053).
 
 ## Install
 
@@ -142,6 +185,9 @@ token.
 There are no other flags: `--model` (default `qwen3:32b`), `--num-predict` (default 1200) and
 `--report`.
 
+`python retrieve.py` is a self-check of the pinned inputs. On 2026-10-22 it printed
+`OK: 24 pinned tasks resolve against 10-chunk corpus; 6 retrieval misses (no-op): ['pen_notebook', 'bottle_cork', 'months_28', 'apples_shop', 'marbles', 'train']`.
+
 ## Architecture
 
 `deliberation_probe.py` loads the 24 tasks in `tasks.json`, builds one prompt per condition, calls
@@ -150,17 +196,7 @@ trace, accuracy by substring match of the final `Answer:` line against the task'
 answers, and the (withdrawn) echo check against the planted wrong answer. `retrieve.py` supplies
 the mindset context for the two mindset conditions.
 
-```mermaid
-flowchart LR
-  T[tasks.json] --> P[deliberation_probe.py]
-  R[retrieve.py] -->|pinned passages| P
-  S[data/served_refs.json] --> R
-  M[data/mindset_intractable.jsonl] --> R
-  P -->|/api/generate| O[(Ollama)]
-  P --> J[results/results.jsonl]
-  P --> X[transcripts/]
-  J -->|--report| MD[results/results.md]
-```
+The call path is drawn in [How it works](#how-it-works).
 
 ### The mindset, and TKHR
 
@@ -177,6 +213,14 @@ your own mindset, use `tartarus-mcp`.
 `months_28`, `apples_shop`, `marbles`, `train`) routed to *no* passage; for those tasks the
 `mindset` condition received only the header and is effectively `base`. A retrieval miss is a silent
 no-op, and we report it rather than hide it.
+
+| Part | In this repo | Licence | Where it lives |
+|---|---|---|---|
+| Harness (`deliberation_probe.py`), pinned retrieval replay (`retrieve.py`) | yes | Apache-2.0 | this repo |
+| Tasks, mindset passages, served refs, results, transcripts | yes | CC-BY-4.0 | `tasks.json`, `data/`, `results/`, `transcripts/` |
+| TKHR, the router that chose the served passages | no | patent pending, not licensed here | reference implementation in [saluca-labs/tartarus-mcp](https://github.com/saluca-labs/tartarus-mcp), under its own licence |
+| The model and its server | no | the model's own | a local Ollama you run |
+| The preprint and the post-mortem | no | as deposited | Zenodo, concept DOIs 10.5281/zenodo.21247053 and 10.5281/zenodo.23125188 |
 
 ### Layout
 
