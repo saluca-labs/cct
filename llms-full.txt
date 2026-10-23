@@ -1,6 +1,6 @@
 # cct
 
-> Reproduction harness, data and 144 released transcripts for the CCT probe in the preprint "Curated Context, Not Weight Surgery" (Saluca Labs, 2026): does serving a thinking model an answer-key (delta_ref) or a method mindset (delta_IT) as context change its reasoning? Code Apache-2.0; data and text CC-BY-4.0.
+> Reproduction harness, data and 144 released transcripts for the CCT probe in the preprint "Curated Context, Not Weight Surgery" (Saluca Labs, 2026): does serving a thinking model an answer-key (delta_ref) or a method mindset (delta_IT) as context change its reasoning? Code Apache-2.0; data, results and transcripts CC-BY-4.0, declared by path in REUSE.toml.
 
 This is a reproduction harness, not a library. Python standard library only; a live run needs a local Ollama with a thinking model (the paper used qwen3:32b). `python deliberation_probe.py --report` rebuilds the summary from the released run with no GPU. The echo-wrong figures (46% and 33%) are WITHDRAWN (paper v0.3, 2026-10-03): most poisoned-arm generations hit the 1,200-token limit, and `results/results.md` and `--report` still print the withdrawn column. TKHR, the router that picked the mindset passages, is patent pending and is not in this repo; the served passages are pinned in `data/served_refs.json`.
 
@@ -274,9 +274,15 @@ That is the concept DOI, which resolves to the latest version (v0.3 as of 2026-1
 
 #### License
 
-Code is licensed under **Apache-2.0** (see `LICENSE`). Data and text (tasks, mindset passages,
-results, transcripts) are released under **CC-BY-4.0**. TKHR is separately patent pending and is **not**
-licensed by this repository; see `NOTICE`.
+Split by path, declared file by file in [`REUSE.toml`](REUSE.toml) ([REUSE](https://reuse.software)
+layout; the licence texts are in [`LICENSES/`](LICENSES/)):
+
+- **Code and repository docs** (`deliberation_probe.py`, `retrieve.py`, README, AGENTS.md, llms.txt,
+  `docs/`): **Apache-2.0**, see [`LICENSE`](LICENSE).
+- **Data, results and research text** (`tasks.json`, `data/`, `results/`, `transcripts/`,
+  `experiment-plan.md`): **CC-BY-4.0**, the licence of the Zenodo record.
+
+TKHR is separately patent pending and is **not** licensed by this repository; see `NOTICE`.
 
 #### Links
 

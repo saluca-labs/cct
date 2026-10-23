@@ -1,6 +1,6 @@
 # cct
 
-> Reproduction harness, data and 144 released transcripts for the CCT probe in the preprint "Curated Context, Not Weight Surgery" (Saluca Labs, 2026): does serving a thinking model an answer-key (delta_ref) or a method mindset (delta_IT) as context change its reasoning? Code Apache-2.0; data and text CC-BY-4.0.
+> Reproduction harness, data and 144 released transcripts for the CCT probe in the preprint "Curated Context, Not Weight Surgery" (Saluca Labs, 2026): does serving a thinking model an answer-key (delta_ref) or a method mindset (delta_IT) as context change its reasoning? Code Apache-2.0; data, results and transcripts CC-BY-4.0, declared by path in REUSE.toml.
 
 This is a reproduction harness, not a library. Python standard library only; a live run needs a local Ollama with a thinking model (the paper used qwen3:32b). `python deliberation_probe.py --report` rebuilds the summary from the released run with no GPU. The echo-wrong figures (46% and 33%) are WITHDRAWN (paper v0.3, 2026-10-03): most poisoned-arm generations hit the 1,200-token limit, and `results/results.md` and `--report` still print the withdrawn column. TKHR, the router that picked the mindset passages, is patent pending and is not in this repo; the served passages are pinned in `data/served_refs.json`.
 

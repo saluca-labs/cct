@@ -2,8 +2,9 @@ CCT probe — reproduction harness for "Curated Context, Not Weight Surgery" (Sa
 Copyright 2026 Saluca Labs
 
 This product includes software developed at Saluca Labs, licensed under the Apache License, Version
-2.0 (see LICENSE). Data and text artifacts (tasks.json, data/, results/, transcripts/) are released
-under CC-BY-4.0.
+2.0 (see LICENSE). Data and text artifacts (tasks.json, data/, results/, transcripts/,
+experiment-plan.md) are released under CC-BY-4.0. REUSE.toml declares the licence of every file by
+path; the licence texts are in LICENSES/.
 
 TKHR (Topic-Keyed Hash Routing), the method that selected the mindset passages served in the paper
 run, is separately PATENT PENDING (Saluca Labs) and is NOT licensed by this repository. This repository

@@ -262,9 +262,15 @@ That is the concept DOI, which resolves to the latest version (v0.3 as of 2026-1
 
 ## License
 
-Code is licensed under **Apache-2.0** (see `LICENSE`). Data and text (tasks, mindset passages,
-results, transcripts) are released under **CC-BY-4.0**. TKHR is separately patent pending and is **not**
-licensed by this repository; see `NOTICE`.
+Split by path, declared file by file in [`REUSE.toml`](REUSE.toml) ([REUSE](https://reuse.software)
+layout; the licence texts are in [`LICENSES/`](LICENSES/)):
+
+- **Code and repository docs** (`deliberation_probe.py`, `retrieve.py`, README, AGENTS.md, llms.txt,
+  `docs/`): **Apache-2.0**, see [`LICENSE`](LICENSE).
+- **Data, results and research text** (`tasks.json`, `data/`, `results/`, `transcripts/`,
+  `experiment-plan.md`): **CC-BY-4.0**, the licence of the Zenodo record.
+
+TKHR is separately patent pending and is **not** licensed by this repository; see `NOTICE`.
 
 ## Links
 
