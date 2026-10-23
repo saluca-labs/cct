@@ -1,0 +1,38 @@
+# cct
+
+> Reproduction harness, data and 144 released transcripts for the CCT probe in the preprint "Curated Context, Not Weight Surgery" (Saluca Labs, 2026): does serving a thinking model an answer-key (delta_ref) or a method mindset (delta_IT) as context change its reasoning? Code Apache-2.0; data, results and transcripts CC-BY-4.0, declared by path in REUSE.toml.
+
+This is a reproduction harness, not a library. Python standard library only; a live run needs a local Ollama with a thinking model (the paper used qwen3:32b). `python deliberation_probe.py --report` rebuilds the summary from the released run with no GPU. The echo-wrong figures (46% and 33%) are WITHDRAWN (paper v0.3, 2026-10-03): most poisoned-arm generations hit the 1,200-token limit, and `results/results.md` and `--report` still print the withdrawn column. TKHR, the router that picked the mindset passages, is patent pending and is not in this repo; the served passages are pinned in `data/served_refs.json`.
+
+The complete public surface is below. If a command, flag or setting is not listed here, it does not exist. There is no package, no service and no test suite. Commands: `python deliberation_probe.py` with `--model` (default `qwen3:32b`), `--num-predict` (default 1200) and `--report`; `python retrieve.py` (no options; self-check of the pinned inputs). Environment: `OLLAMA_URL`, the full generate URL (default `http://localhost:11434/api/generate`). Python: `retrieve.retrieve(task, k=4)` returns the mindset context and the served refs. Conditions: `base`, `nudge`, `mindset`, `ref_correct`, `ref_wrong`, `mindset_ref_wrong`.
+
+## Start here
+
+- [README](https://github.com/saluca-labs/cct/blob/main/README.md): how it works (diagram), status, the corrected results table, reproduce each result, install, quickstart, usage, citation
+- [AGENTS.md](https://github.com/saluca-labs/cct/blob/main/AGENTS.md): orientation for agents, what you can and cannot see, the only numbers to trust
+- [Full docs in one file](https://raw.githubusercontent.com/saluca-labs/cct/main/llms-full.txt): README, experiment plan and AGENTS.md concatenated
+
+## Design
+
+- [experiment-plan.md](https://raw.githubusercontent.com/saluca-labs/cct/main/experiment-plan.md): design notes and pre-registered hypotheses H1 to H5
+
+## Code
+
+- [deliberation_probe.py](https://raw.githubusercontent.com/saluca-labs/cct/main/deliberation_probe.py): the six-condition harness, scoring and `--report`
+- [retrieve.py](https://raw.githubusercontent.com/saluca-labs/cct/main/retrieve.py): pinned replay of the served mindset passages, lexical fallback for new tasks
+- [tasks.json](https://raw.githubusercontent.com/saluca-labs/cct/main/tasks.json): the 24 reasoning-trap tasks (question, accepted answers, planted wrong answer)
+
+## Data
+
+- [results/results.jsonl](https://raw.githubusercontent.com/saluca-labs/cct/main/results/results.jsonl): all 144 generations of the released run, with `done_reason`
+- [data/served_refs.json](https://raw.githubusercontent.com/saluca-labs/cct/main/data/served_refs.json): per-task passages served in the paper run
+- [data/mindset_intractable.jsonl](https://raw.githubusercontent.com/saluca-labs/cct/main/data/mindset_intractable.jsonl): the 10 method passages
+- [transcripts/](https://github.com/saluca-labs/cct/tree/main/transcripts): full thinking and response for each generation, named MODEL__TASK__COND.txt
+
+## Optional
+
+- [CITATION.cff](https://raw.githubusercontent.com/saluca-labs/cct/main/CITATION.cff): how to cite
+- [Preprint, concept DOI](https://doi.org/10.5281/zenodo.21247053): the paper this code reproduces
+- [Post-mortem of the withdrawn echo figure](https://doi.org/10.5281/zenodo.23125188): null result and scorer analysis
+- [NOTICE](https://raw.githubusercontent.com/saluca-labs/cct/main/NOTICE): licence split and the TKHR patent notice
+- [saluca-labs/tartarus-mcp](https://github.com/saluca-labs/tartarus-mcp): TKHR reference implementation

@@ -1,0 +1,21 @@
+Captured 2026-10-22 from a clean clone of saluca-labs/cct at origin/main 04dfd0e, copied to a
+scratch directory so results/ stayed as released. Python 3.12.10, Ollama 0.34.4, local model qwen3:8b
+(not the paper model). The run was interrupted after the sixth generation (stdout piped to head -6).
+
+Command:
+
+  python -u deliberation_probe.py --model qwen3:8b --num-predict 1200 | head -6
+
+Exact stdout:
+
+  [1/144] bat_ball     base              delib= 3.76 ans='$0.05' [correct] 3.3s
+  [2/144] bat_ball     nudge             delib= 5.88 ans='0.05' [correct] 2.0s
+  [3/144] bat_ball     mindset           delib= 3.24 ans='$0.05' [correct] 3.9s
+  [4/144] bat_ball     ref_correct       delib= 4.09 ans='0.05' [correct] 3.4s
+  [5/144] bat_ball     ref_wrong         delib= 7.16 ans='he bat is $1.00 more t' [?] 6.5s
+  [6/144] bat_ball     mindset_ref_wrong delib= 5.09 ans='he reference solution ' [?] 6.7s
+
+done_reason for the six records (from results/results.jsonl of the scratch copy):
+base stop, nudge stop, mindset stop, ref_correct stop, ref_wrong length, mindset_ref_wrong length
+
+Rendered to PNG with rich Console(record=True).export_svg() and headless Chromium (playwright).

@@ -12,7 +12,43 @@ that carry multi-step reasoning. This probe asks the inference-time version of t
 you *serve* a model context rather than *train* on it, does a δ_ref answer-key shortcut its
 reasoning, and does a δ_IT **method** mindset help instead?
 
-## Result (qwen3:32b, n = 144 = 24 tasks × 6 conditions, one sample per cell)
+## How it works
+
+One pass of `python deliberation_probe.py --model ...`, per task and condition. Every box is a
+function or file on this branch; every arrow is a call or data flow in the code.
+
+```mermaid
+flowchart TD
+    T["tasks.json: 24 tasks with q, accepted answers ans, planted wrong answer"] -->|"load_tasks()"| RUN["run(model, num_predict)"]
+    RUN -->|"once per task"| RET["retrieve.retrieve(task)"]
+    PIN["data/served_refs.json: refs served in the paper run"] --> RET
+    COR["data/mindset_intractable.jsonl: 10 method passages"] --> RET
+    RET -->|"HEADER plus passages cut to 600 chars, and served_refs"| BP["build_prompt(task, cond, mind_ctx)"]
+    RUN -->|"6 conditions: base, nudge, mindset, ref_correct, ref_wrong, mindset_ref_wrong"| BP
+    BP --> OL["ollama(): POST to OLLAMA_URL, default localhost:11434/api/generate; temperature 0.6, num_predict"]
+    OL -->|"thinking, response, done_reason"| SC["score(): deliberation markers per 100 words, final_answer, correct, echoed_wrong"]
+    SC -->|"append one record"| J["results/results.jsonl"]
+    OL -->|"full thinking and response"| TR["transcripts/MODEL__TASK__COND.txt"]
+    J -->|"report(), at the end of a run or alone with the report flag"| MD["results/results.md and stdout"]
+```
+
+`retrieve()` replays the pinned refs for the 24 paper tasks (6 of them are empty, so the mindset
+context is the header alone) and falls back to `_lexical_topk` only for a task id that is not in
+`served_refs.json`. Only the `mindset` and `mindset_ref_wrong` prompts include that context.
+`final_answer()` takes the last `Answer:` line of the response, or of the thinking trace when the
+response is empty, and otherwise the last 120 characters; that fallback is the scoring artifact
+behind the withdrawn echo figures (see the Correction under Status). Cells already in
+`results/results.jsonl` are skipped, which is what makes a run resumable.
+
+## Status
+
+Research artifact. The code on `main` reproduces the released paper run (preprint v0.3, the latest
+version under the concept DOI above): `--report` rebuilds the summary from `results/results.jsonl`
+with no GPU, and a live run against a local Ollama model works (checked 2026-10-22, see
+Screenshots). The poisoned-reference arms are unresolved in this run (see the Correction below); a
+re-run with a higher generation limit and several samples per cell has not been done.
+
+### Result (qwen3:32b, n = 144 = 24 tasks × 6 conditions, one sample per cell)
 
 > **Correction (2026-10-03, paper v0.3).** Earlier versions of this README and of the paper reported
 > that a poisoned reference is echoed as the final answer 46% of the time and that the mindset cuts
@@ -57,27 +93,112 @@ Four findings:
 Answering the poisoned-arm question needs a re-run with a higher generation limit and several
 samples per cell.
 
-## Reproduce
+A post-mortem of the withdrawn echo figure is published separately: *A Substring Grader Over
+Truncated Chain-of-Thought Inverts a Pre-Registered Finding: A Null Result and a Post-Mortem*,
+https://doi.org/10.5281/zenodo.23125188 (concept DOI).
+
+### Reproduce each result
+
+| Result | Command | Reads |
+|---|---|---|
+| Mean deliberation per 100 words and accuracy, per condition | `python deliberation_probe.py --report` | `results/results.jsonl` |
+| Hit generation limit, per condition | the one-line `done_reason` count under the Quickstart Correction | `results/results.jsonl` |
+| Mindset against nudge and base: 3 tasks gained, none lost, exact McNemar p = 0.25 | compare `correct` for `mindset` against `nudge` (or `base`) per `task_id`; with 3 discordant pairs all one way, p = 2 x 0.5^3 | `results/results.jsonl` |
+| Which tasks were retrieval misses | `python retrieve.py` | `data/served_refs.json`, `data/mindset_intractable.jsonl` |
+| Any single generation | open its transcript | `transcripts/qwen3_32b__TASK__COND.txt` |
+
+The McNemar row was recomputed from `results/results.jsonl` on 2026-10-22: the gained tasks are
+`widgets`, `gadgets` and `wine_water` against nudge, and `widgets`, `jacket` and `wine_water`
+against base, all with served passages. The paper is archived under the concept DOI
+[10.5281/zenodo.21247053](https://doi.org/10.5281/zenodo.21247053).
+
+## Install
+
+No third-party Python packages: the harness is standard-library only (`urllib`, `re`, `json`).
+Tested 2026-10-22 with Python 3.12.10 and Ollama 0.34.4.
 
 ```bash
-# 1. a local thinking model via Ollama (the paper used qwen3:32b)
+git clone https://github.com/saluca-labs/cct
+cd cct
+# only for a live run: a local thinking model via Ollama (the paper used qwen3:32b)
 ollama pull qwen3:32b
+```
 
-# 2. run the full 24×6 matrix (resumable; ~5-9h on a single 24GB+ GPU)
-python deliberation_probe.py --model qwen3:32b --num-predict 1200
+## Quickstart
 
-# 3. regenerate the summary table any time
+The repository already contains the **released paper run** in `results/` and `transcripts/`, so
+the summary can be rebuilt without a GPU or Ollama:
+
+```bash
 python deliberation_probe.py --report
 ```
 
-No third-party Python packages: the harness is standard-library only (`urllib`, `re`, `json`).
+The table portion of the output from a clean clone on 2026-10-22 (the command also rewrites
+`results/results.md`, which came out byte-identical to the committed copy):
+
+```
+## model `qwen3:32b`  (n=144 generations)
+
+| condition | n | mean delib/100w | accuracy | echo-wrong | mean think words |
+|---|---|---|---|---|---|
+| base | 24 | 3.61 | 79% | - | 425 |
+| nudge | 24 | 3.64 | 79% | - | 365 |
+| mindset | 24 | 3.56 | 92% | - | 344 |
+| ref_correct | 24 | 3.21 | 96% | 4% | 358 |
+| ref_wrong | 24 | 4.66 | 54% | 46% | 742 |
+| mindset_ref_wrong | 24 | 4.53 | 50% | 33% | 666 |
+```
+
+The harness prints the placeholder cells in the echo-wrong column as an em-dash character; they are
+shown as `-` here. The echo-wrong column and the verdict lines `--report` prints after the table
+(H1', PROTECTIVE) are the withdrawn figures; see the Correction above.
+
+> **Correction, 2026-10-22.** This README said "`--report` reproduces the table above without a
+> GPU". It reproduces the deliberation and accuracy columns. It does not print the "hit generation
+> limit" column, and it still prints the withdrawn echo-wrong column and verdicts. The limit counts
+> come from `done_reason` in the released records:
+>
+> ```bash
+> python -c "import json,collections;c=collections.Counter(r['cond'] for r in map(json.loads,open('results/results.jsonl',encoding='utf-8')) if r['done_reason']=='length');print(dict(c))"
+> ```
+>
+> which prints `{'ref_wrong': 20, 'mindset_ref_wrong': 14, 'base': 3, 'nudge': 2, 'mindset': 1, 'ref_correct': 1}`.
+
+## Usage
+
+```bash
+# run the full 24×6 matrix (resumable; ~5-9h on a single 24GB+ GPU)
+python deliberation_probe.py --model qwen3:32b --num-predict 1200
+
+# regenerate the summary table any time
+python deliberation_probe.py --report
+```
+
+The released run's per-generation times in `results/results.jsonl` sum to about 6.3 hours.
 Runs are checkpointed to `results/results.jsonl` (keyed by model/task/condition) and safe to
-interrupt and resume. Set `OLLAMA_URL` to point at a non-default endpoint.
+interrupt and resume. A new `--model` appends its own records next to the released ones, so run
+it in a copy of the repo if you want to keep `results/` as released. Set `OLLAMA_URL` to point at
+a non-default endpoint (the full `/api/generate` URL; default `http://localhost:11434/api/generate`).
+Generation uses `temperature: 0.6`, so a re-run will not match the released transcripts token for
+token.
 
-The repository already contains the **released paper run** in `results/` and `transcripts/`, so
-`--report` reproduces the table above without a GPU.
+There are no other flags: `--model` (default `qwen3:32b`), `--num-predict` (default 1200) and
+`--report`.
 
-## The mindset, and TKHR
+`python retrieve.py` is a self-check of the pinned inputs. On 2026-10-22 it printed
+`OK: 24 pinned tasks resolve against 10-chunk corpus; 6 retrieval misses (no-op): ['pen_notebook', 'bottle_cork', 'months_28', 'apples_shop', 'marbles', 'train']`.
+
+## Architecture
+
+`deliberation_probe.py` loads the 24 tasks in `tasks.json`, builds one prompt per condition, calls
+Ollama's `/api/generate`, and scores each generation: deliberation-marker rate over the thinking
+trace, accuracy by substring match of the final `Answer:` line against the task's accepted
+answers, and the (withdrawn) echo check against the planted wrong answer. `retrieve.py` supplies
+the mindset context for the two mindset conditions.
+
+The call path is drawn in [How it works](#how-it-works).
+
+### The mindset, and TKHR
 
 The `mindset` conditions serve a small set of **method** passages (heuristics, decision procedures,
 never answers) from an `intractable` mindset. In the paper run those passages were selected by
@@ -93,7 +214,15 @@ your own mindset, use `tartarus-mcp`.
 `mindset` condition received only the header and is effectively `base`. A retrieval miss is a silent
 no-op, and we report it rather than hide it.
 
-## Layout
+| Part | In this repo | Licence | Where it lives |
+|---|---|---|---|
+| Harness (`deliberation_probe.py`), pinned retrieval replay (`retrieve.py`) | yes | Apache-2.0 | this repo |
+| Tasks, mindset passages, served refs, results, transcripts | yes | CC-BY-4.0 | `tasks.json`, `data/`, `results/`, `transcripts/` |
+| TKHR, the router that chose the served passages | no | patent pending, not licensed here | reference implementation in [saluca-labs/tartarus-mcp](https://github.com/saluca-labs/tartarus-mcp), under its own licence |
+| The model and its server | no | the model's own | a local Ollama you run |
+| The preprint and the post-mortem | no | as deposited | Zenodo, concept DOIs 10.5281/zenodo.21247053 and 10.5281/zenodo.23125188 |
+
+### Layout
 
 ```
 deliberation_probe.py     the six-condition harness (Ollama; stdlib only)
@@ -107,16 +236,47 @@ results/
   results.md                  the summary table as generated (echo column withdrawn, see Correction)
 transcripts/                  full thinking + response traces, 144 files
 experiment-plan.md            design notes and hypotheses
+docs/img/                     captured output of a live smoke run (see Screenshots)
 ```
+
+## Screenshots
+
+![Terminal output of deliberation_probe.py run against qwen3:8b: the six conditions of the bat_ball task, each with deliberation rate, extracted answer and correctness](docs/img/harness-smoke-qwen3-8b-2026-10-22.png)
+
+The first six generations of a live run, captured 2026-10-22 from a clean clone (copied to a
+scratch directory so `results/` stayed as released) against a local Ollama, with `qwen3:8b` rather
+than the paper's `qwen3:32b`, then interrupted. This shows the harness working; it is not a paper
+result. Both poisoned conditions hit the 1,200-token limit (`done_reason: "length"`), and the
+`ans=` column shows the scorer falling back to the tail of the reasoning trace, which is the
+artifact described in the Correction. Command and exact text:
+[`docs/img/harness-smoke-qwen3-8b-2026-10-22.txt`](docs/img/harness-smoke-qwen3-8b-2026-10-22.txt).
 
 ## Citation
 
-Ruvalcaba, C. (2026). *Curated Context, Not Weight Surgery: Reasoning-Shaped Mindsets over MCP as a
+Ruvalcaba, C. and the Saluca Agentic AI Research Team (2026). *Curated Context, Not Weight Surgery: Reasoning-Shaped Mindsets over MCP as a
 Safe Stopgap for Task-Scoped Functional Tuning of Small Language Models.* Saluca Labs. Zenodo.
 https://doi.org/10.5281/zenodo.21247053
 
+That is the concept DOI, which resolves to the latest version (v0.3 as of 2026-10-22). See
+[`CITATION.cff`](CITATION.cff).
+
 ## License
 
-Code is licensed under **Apache-2.0** (see `LICENSE`). Data and text (tasks, mindset passages,
-results, transcripts) are released under **CC-BY-4.0**. TKHR is separately patent pending and is **not**
-licensed by this repository; see `NOTICE`.
+Split by path, declared file by file in [`REUSE.toml`](REUSE.toml) ([REUSE](https://reuse.software)
+layout; the licence texts are in [`LICENSES/`](LICENSES/)):
+
+- **Code and repository docs** (`deliberation_probe.py`, `retrieve.py`, README, AGENTS.md, llms.txt,
+  `docs/`): **Apache-2.0**, see [`LICENSE`](LICENSE).
+- **Data, results and research text** (`tasks.json`, `data/`, `results/`, `transcripts/`,
+  `experiment-plan.md`): **CC-BY-4.0**, the licence of the Zenodo record.
+
+TKHR is separately patent pending and is **not** licensed by this repository; see `NOTICE`.
+
+## Links
+
+- Preprint: https://doi.org/10.5281/zenodo.21247053 (concept DOI)
+- Post-mortem of the withdrawn echo figure: https://doi.org/10.5281/zenodo.23125188 (concept DOI)
+- TKHR reference implementation: [saluca-labs/tartarus-mcp](https://github.com/saluca-labs/tartarus-mcp)
+- Design notes: [`experiment-plan.md`](experiment-plan.md)
+
+_Last updated: 2026-10-22_
