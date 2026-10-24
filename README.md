@@ -1,3 +1,5 @@
+![cct](docs/img/banner-2026-10-23.jpg)
+
 # CCT probe: curated context vs. answer-keys at inference
 
 Reproduction harness, data, and released transcripts for the empirical probe in
